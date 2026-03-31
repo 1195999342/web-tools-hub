@@ -1,0 +1,53 @@
+{
+  "common": {
+    "search_placeholder": "Поиск инструментов...",
+    "no_results": "Инструменты не найдены",
+    "copy": "Копировать",
+    "copied": "Скопировано!",
+    "back_home": "На главную",
+    "all_tools": "Все инструменты",
+    "categories": "Категории"
+  },
+  "navbar": {
+    "home": "Главная",
+    "categories": "Категории",
+    "search": "Поиск"
+  },
+  "footer": {
+    "copyright": "© {year} Web Tools Hub",
+    "privacy": "Политика конфиденциальности",
+    "terms": "Условия использования",
+    "contact": "Контакты"
+  },
+  "tools": {
+    "json-formatter": {
+      "input_placeholder": "Вставьте JSON сюда...",
+      "format_button": "Форматировать",
+      "error_invalid_json": "Неверный JSON: {message}",
+      "instructions": "Вставьте текст JSON в поле ввода и нажмите Форматировать для его улучшения.",
+      "copy_result": "Копировать результат"
+    },
+    "word-counter": {
+      "input_placeholder": "Введите или вставьте текст здесь...",
+      "chars": "Символы",
+      "words": "Слова",
+      "lines": "Строки",
+      "instructions": "Введите или вставьте текст для просмотра статистики в реальном времени."
+    }
+  },
+  "categories": {
+    "text": "Текст",
+    "json": "JSON",
+    "encoding": "Кодирование",
+    "color": "Цвет",
+    "network": "Сеть",
+    "math": "Математика",
+    "misc": "Прочее"
+  },
+  "errors": {
+    "not_found": "Страница не найдена",
+    "not_found_description": "Страница, которую вы ищете, не существует.",
+    "tool_not_found": "Инструмент не найден",
+    "tool_error": "В этом инструменте произошла ошибка."
+  }
+}

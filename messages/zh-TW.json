@@ -1,0 +1,53 @@
+{
+  "common": {
+    "search_placeholder": "搜尋工具...",
+    "no_results": "未找到相關工具",
+    "copy": "複製",
+    "copied": "已複製！",
+    "back_home": "返回首頁",
+    "all_tools": "所有工具",
+    "categories": "分類"
+  },
+  "navbar": {
+    "home": "首頁",
+    "categories": "分類",
+    "search": "搜尋"
+  },
+  "footer": {
+    "copyright": "© {year} Web Tools Hub",
+    "privacy": "隱私政策",
+    "terms": "使用條款",
+    "contact": "聯絡我們"
+  },
+  "tools": {
+    "json-formatter": {
+      "input_placeholder": "在此貼上 JSON...",
+      "format_button": "格式化",
+      "error_invalid_json": "無效的 JSON：{message}",
+      "instructions": "在輸入區域貼上 JSON 文字，點擊格式化按鈕進行美化。",
+      "copy_result": "複製結果"
+    },
+    "word-counter": {
+      "input_placeholder": "在此輸入或貼上文字...",
+      "chars": "字元數",
+      "words": "單詞數",
+      "lines": "行數",
+      "instructions": "輸入或貼上文字以查看即時統計資料。"
+    }
+  },
+  "categories": {
+    "text": "文字",
+    "json": "JSON",
+    "encoding": "編碼",
+    "color": "顏色",
+    "network": "網路",
+    "math": "數學",
+    "misc": "其他"
+  },
+  "errors": {
+    "not_found": "頁面未找到",
+    "not_found_description": "您訪問的頁面不存在。",
+    "tool_not_found": "工具未找到",
+    "tool_error": "此工具發生了錯誤。"
+  }
+}

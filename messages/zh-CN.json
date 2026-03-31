@@ -1,0 +1,53 @@
+{
+  "common": {
+    "search_placeholder": "搜索工具...",
+    "no_results": "未找到相关工具",
+    "copy": "复制",
+    "copied": "已复制！",
+    "back_home": "返回首页",
+    "all_tools": "所有工具",
+    "categories": "分类"
+  },
+  "navbar": {
+    "home": "首页",
+    "categories": "分类",
+    "search": "搜索"
+  },
+  "footer": {
+    "copyright": "© {year} Web Tools Hub",
+    "privacy": "隐私政策",
+    "terms": "使用条款",
+    "contact": "联系我们"
+  },
+  "tools": {
+    "json-formatter": {
+      "input_placeholder": "在此粘贴 JSON...",
+      "format_button": "格式化",
+      "error_invalid_json": "无效的 JSON：{message}",
+      "instructions": "在输入区域粘贴 JSON 文本，点击格式化按钮进行美化。",
+      "copy_result": "复制结果"
+    },
+    "word-counter": {
+      "input_placeholder": "在此输入或粘贴文本...",
+      "chars": "字符数",
+      "words": "单词数",
+      "lines": "行数",
+      "instructions": "输入或粘贴文本以查看实时统计数据。"
+    }
+  },
+  "categories": {
+    "text": "文本",
+    "json": "JSON",
+    "encoding": "编码",
+    "color": "颜色",
+    "network": "网络",
+    "math": "数学",
+    "misc": "其他"
+  },
+  "errors": {
+    "not_found": "页面未找到",
+    "not_found_description": "您访问的页面不存在。",
+    "tool_not_found": "工具未找到",
+    "tool_error": "此工具发生了错误。"
+  }
+}

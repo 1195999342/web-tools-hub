@@ -1,0 +1,53 @@
+{
+  "common": {
+    "search_placeholder": "도구 검색...",
+    "no_results": "도구를 찾을 수 없습니다",
+    "copy": "복사",
+    "copied": "복사됨!",
+    "back_home": "홈으로 돌아가기",
+    "all_tools": "모든 도구",
+    "categories": "카테고리"
+  },
+  "navbar": {
+    "home": "홈",
+    "categories": "카테고리",
+    "search": "검색"
+  },
+  "footer": {
+    "copyright": "© {year} Web Tools Hub",
+    "privacy": "개인정보 처리방침",
+    "terms": "이용약관",
+    "contact": "문의하기"
+  },
+  "tools": {
+    "json-formatter": {
+      "input_placeholder": "여기에 JSON을 붙여넣으세요...",
+      "format_button": "포맷",
+      "error_invalid_json": "잘못된 JSON: {message}",
+      "instructions": "입력 영역에 JSON 텍스트를 붙여넣고 포맷 버튼을 클릭하여 정리하세요.",
+      "copy_result": "결과 복사"
+    },
+    "word-counter": {
+      "input_placeholder": "여기에 텍스트를 입력하거나 붙여넣으세요...",
+      "chars": "문자 수",
+      "words": "단어 수",
+      "lines": "줄 수",
+      "instructions": "텍스트를 입력하거나 붙여넣어 실시간 통계를 확인하세요."
+    }
+  },
+  "categories": {
+    "text": "텍스트",
+    "json": "JSON",
+    "encoding": "인코딩",
+    "color": "색상",
+    "network": "네트워크",
+    "math": "수학",
+    "misc": "기타"
+  },
+  "errors": {
+    "not_found": "페이지를 찾을 수 없습니다",
+    "not_found_description": "찾고 있는 페이지가 존재하지 않습니다.",
+    "tool_not_found": "도구를 찾을 수 없습니다",
+    "tool_error": "이 도구에서 오류가 발생했습니다."
+  }
+}

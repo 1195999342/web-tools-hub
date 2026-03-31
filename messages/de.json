@@ -1,0 +1,53 @@
+{
+  "common": {
+    "search_placeholder": "Tools suchen...",
+    "no_results": "Keine Tools gefunden",
+    "copy": "Kopieren",
+    "copied": "Kopiert!",
+    "back_home": "Zurück zur Startseite",
+    "all_tools": "Alle Tools",
+    "categories": "Kategorien"
+  },
+  "navbar": {
+    "home": "Startseite",
+    "categories": "Kategorien",
+    "search": "Suchen"
+  },
+  "footer": {
+    "copyright": "© {year} Web Tools Hub",
+    "privacy": "Datenschutzrichtlinie",
+    "terms": "Nutzungsbedingungen",
+    "contact": "Kontakt"
+  },
+  "tools": {
+    "json-formatter": {
+      "input_placeholder": "JSON hier einfügen...",
+      "format_button": "Formatieren",
+      "error_invalid_json": "Ungültiges JSON: {message}",
+      "instructions": "Fügen Sie Ihren JSON-Text in den Eingabebereich ein und klicken Sie auf Formatieren, um ihn zu verschönern.",
+      "copy_result": "Ergebnis kopieren"
+    },
+    "word-counter": {
+      "input_placeholder": "Text hier eingeben oder einfügen...",
+      "chars": "Zeichen",
+      "words": "Wörter",
+      "lines": "Zeilen",
+      "instructions": "Geben Sie Ihren Text ein oder fügen Sie ihn ein, um Echtzeitstatistiken zu sehen."
+    }
+  },
+  "categories": {
+    "text": "Text",
+    "json": "JSON",
+    "encoding": "Kodierung",
+    "color": "Farbe",
+    "network": "Netzwerk",
+    "math": "Mathematik",
+    "misc": "Sonstiges"
+  },
+  "errors": {
+    "not_found": "Seite nicht gefunden",
+    "not_found_description": "Die gesuchte Seite existiert nicht.",
+    "tool_not_found": "Tool nicht gefunden",
+    "tool_error": "In diesem Tool ist ein Fehler aufgetreten."
+  }
+}

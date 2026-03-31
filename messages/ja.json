@@ -1,0 +1,53 @@
+{
+  "common": {
+    "search_placeholder": "ツールを検索...",
+    "no_results": "ツールが見つかりません",
+    "copy": "コピー",
+    "copied": "コピーしました！",
+    "back_home": "ホームに戻る",
+    "all_tools": "すべてのツール",
+    "categories": "カテゴリ"
+  },
+  "navbar": {
+    "home": "ホーム",
+    "categories": "カテゴリ",
+    "search": "検索"
+  },
+  "footer": {
+    "copyright": "© {year} Web Tools Hub",
+    "privacy": "プライバシーポリシー",
+    "terms": "利用規約",
+    "contact": "お問い合わせ"
+  },
+  "tools": {
+    "json-formatter": {
+      "input_placeholder": "JSONをここに貼り付け...",
+      "format_button": "フォーマット",
+      "error_invalid_json": "無効なJSON：{message}",
+      "instructions": "入力エリアにJSONテキストを貼り付け、フォーマットボタンをクリックして整形してください。",
+      "copy_result": "結果をコピー"
+    },
+    "word-counter": {
+      "input_placeholder": "テキストを入力または貼り付け...",
+      "chars": "文字数",
+      "words": "単語数",
+      "lines": "行数",
+      "instructions": "テキストを入力または貼り付けてリアルタイム統計を確認してください。"
+    }
+  },
+  "categories": {
+    "text": "テキスト",
+    "json": "JSON",
+    "encoding": "エンコード",
+    "color": "カラー",
+    "network": "ネットワーク",
+    "math": "数学",
+    "misc": "その他"
+  },
+  "errors": {
+    "not_found": "ページが見つかりません",
+    "not_found_description": "お探しのページは存在しません。",
+    "tool_not_found": "ツールが見つかりません",
+    "tool_error": "このツールでエラーが発生しました。"
+  }
+}
