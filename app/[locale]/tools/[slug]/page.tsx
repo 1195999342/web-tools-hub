@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
+import { setRequestLocale } from 'next-intl/server';
 import { getToolBySlug, getEnabledTools, type Locale } from '@/tools/registry';
 import { locales } from '@/i18n';
 import ToolErrorBoundary from '@/components/ToolErrorBoundary';
@@ -40,6 +41,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export default async function ToolPage({ params }: PageProps) {
   const { locale, slug } = await params;
+  setRequestLocale(locale);
   const tool = getToolBySlug(slug);
   if (!tool) notFound();
 

@@ -1,4 +1,5 @@
 import { NextIntlClientProvider } from 'next-intl';
+import { setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { locales, type Locale } from '@/i18n';
 import Navbar from '@/components/layout/Navbar';
@@ -16,7 +17,7 @@ export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
 
-async function getMessages(locale: string) {
+async function loadMessages(locale: string) {
   try {
     return (await import(`../../messages/${locale}.json`)).default;
   } catch {
@@ -31,7 +32,9 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
     notFound();
   }
 
-  const messages = await getMessages(locale);
+  setRequestLocale(locale);
+
+  const messages = await loadMessages(locale);
 
   return (
     <html lang={locale}>
