@@ -1,5 +1,4 @@
 import { NextIntlClientProvider } from 'next-intl';
-import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { locales, type Locale } from '@/i18n';
 import Navbar from '@/components/layout/Navbar';
@@ -17,6 +16,14 @@ export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
 
+async function getMessages(locale: string) {
+  try {
+    return (await import(`../../messages/${locale}.json`)).default;
+  } catch {
+    return (await import('../../messages/en.json')).default;
+  }
+}
+
 export default async function LocaleLayout({ children, params }: LocaleLayoutProps) {
   const { locale } = await params;
 
@@ -24,12 +31,12 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
     notFound();
   }
 
-  const messages = await getMessages();
+  const messages = await getMessages(locale);
 
   return (
     <html lang={locale}>
       <body className="flex flex-col min-h-screen">
-        <NextIntlClientProvider messages={messages}>
+        <NextIntlClientProvider locale={locale} messages={messages}>
           <LocalePreferenceSync currentLocale={locale} />
           <Navbar currentLocale={locale} currentPath="" />
           <main className="flex-1">
