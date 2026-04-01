@@ -3,17 +3,18 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
+import { useParams } from 'next/navigation';
 import { getFeaturedTools, getEnabledTools, getToolsByCategory, type ToolCategory, type Locale } from '@/tools/registry';
 import ToolCard from '@/components/ui/ToolCard';
 
 interface HomePageProps {
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }
 
 const CATEGORIES: ToolCategory[] = ['text', 'json', 'encoding', 'color', 'network', 'math', 'misc'];
 
 export default function HomePage({ params }: HomePageProps) {
-  const { locale } = params;
+  const { locale } = useParams() as { locale: string };
   const t = useTranslations();
 
   const featuredTools = getFeaturedTools();
