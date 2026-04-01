@@ -8,8 +8,6 @@ import ToolErrorBoundary from '@/components/ToolErrorBoundary';
 import LocalePreferenceSync from '@/components/layout/LocalePreferenceSync';
 import '../globals.css';
 
-export const runtime = 'edge';
-
 interface LocaleLayoutProps {
   children: React.ReactNode;
   params: Promise<{ locale: string }>;

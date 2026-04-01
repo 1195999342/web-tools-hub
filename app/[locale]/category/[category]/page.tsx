@@ -4,10 +4,7 @@ import { getTranslations } from 'next-intl/server';
 import { getToolsByCategory, type ToolCategory } from '@/tools/registry';
 import { locales } from '@/i18n';
 
-export const runtime = 'edge';
-import ToolCard from '@/components/ui/ToolCard';
-
-const CATEGORIES: ToolCategory[] = ['text', 'json', 'encoding', 'color', 'network', 'math', 'misc'];
+import ToolCard from '@/components/ui/ToolCard';const CATEGORIES: ToolCategory[] = ['text', 'json', 'encoding', 'color', 'network', 'math', 'misc'];
 
 interface CategoryPageProps {
   params: Promise<{ locale: string; category: string }>;

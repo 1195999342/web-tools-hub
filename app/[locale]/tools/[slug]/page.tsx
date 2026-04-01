@@ -3,8 +3,6 @@ import type { Metadata } from 'next';
 import { getToolBySlug, getEnabledTools, type Locale } from '@/tools/registry';
 import { locales } from '@/i18n';
 import ToolErrorBoundary from '@/components/ToolErrorBoundary';
-
-export const runtime = 'edge';
 import JsonFormatter from '@/tools/json-formatter/index';
 import WordCounter from '@/tools/word-counter/index';
 
