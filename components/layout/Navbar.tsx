@@ -19,8 +19,8 @@ const CATEGORIES: ToolCategory[] = ['text', 'json', 'encoding', 'color', 'networ
 
 const LOCALES: { code: Locale; label: string }[] = [
   { code: 'en', label: 'English' },
-  { code: 'zh-CN', label: '简体中文' },
-  { code: 'zh-TW', label: '繁體中文' },
+  { code: 'zh-cn', label: '简体中文' },
+  { code: 'zh-tw', label: '繁體中文' },
   { code: 'ja', label: '日本語' },
   { code: 'ko', label: '한국어' },
   { code: 'es', label: 'Español' },

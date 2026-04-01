@@ -5,7 +5,7 @@ import * as fc from 'fast-check';
 import { createSearchEngine } from '../lib/search';
 import { TOOL_REGISTRY, type ToolMeta, type Locale, type ToolCategory } from '../tools/registry';
 
-const LOCALES: Locale[] = ['en', 'zh-CN', 'zh-TW', 'ja', 'ko', 'es', 'fr', 'de', 'pt', 'ru'];
+const LOCALES: Locale[] = ['en', 'zh-cn', 'zh-tw', 'ja', 'ko', 'es', 'fr', 'de', 'pt', 'ru'];
 const CATEGORIES: ToolCategory[] = ['text', 'json', 'encoding', 'color', 'network', 'math', 'misc'];
 
 const localeArb = fc.constantFrom(...LOCALES);

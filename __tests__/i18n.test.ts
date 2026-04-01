@@ -12,12 +12,12 @@ describe('detectLocaleFromHeader unit tests', () => {
   });
 
   test('exact match zh-CN', () => {
-    expect(detectLocaleFromHeader('zh-CN')).toBe('zh-CN');
+    expect(detectLocaleFromHeader('zh-CN')).toBe('zh-cn');
   });
 
-  test('prefix match zh returns zh-CN', () => {
+  test('prefix match zh returns zh-cn', () => {
     const result = detectLocaleFromHeader('zh');
-    expect(['zh-CN', 'zh-TW']).toContain(result);
+    expect(['zh-cn', 'zh-tw']).toContain(result);
   });
 
   test('quality-weighted selection', () => {
@@ -32,7 +32,7 @@ describe('detectLocaleFromHeader unit tests', () => {
   test('locales array contains all 10 languages', () => {
     expect(locales).toHaveLength(10);
     expect(locales).toContain('en');
-    expect(locales).toContain('zh-CN');
+    expect(locales).toContain('zh-cn');
     expect(locales).toContain('ja');
   });
 });
