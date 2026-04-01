@@ -1,12 +1,19 @@
 import { NextIntlClientProvider } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
+import type { Metadata } from 'next';
 import { locales, type Locale } from '@/i18n';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import ToolErrorBoundary from '@/components/ToolErrorBoundary';
 import LocalePreferenceSync from '@/components/layout/LocalePreferenceSync';
 import '../globals.css';
+
+export const metadata: Metadata = {
+  icons: {
+    icon: 'data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛠️</text></svg>',
+  },
+};
 
 interface LocaleLayoutProps {
   children: React.ReactNode;
