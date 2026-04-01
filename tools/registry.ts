@@ -1,5 +1,5 @@
 export type ToolCategory = 'text' | 'json' | 'encoding' | 'color' | 'network' | 'math' | 'misc';
-export type Locale = 'en' | 'zh-CN' | 'zh-TW' | 'ja' | 'ko' | 'es' | 'fr' | 'de' | 'pt' | 'ru';
+export type Locale = 'en' | 'zh-cn' | 'zh-tw' | 'ja' | 'ko' | 'es' | 'fr' | 'de' | 'pt' | 'ru';
 
 export interface ToolMeta {
   slug: string;
@@ -19,11 +19,11 @@ export const TOOL_REGISTRY: ToolMeta[] = [
     category: 'json',
     enabled: true,
     featured: true,
-    supportedLocales: ['en', 'zh-CN', 'zh-TW', 'ja', 'ko', 'es', 'fr', 'de', 'pt', 'ru'],
+    supportedLocales: ['en', 'zh-cn', 'zh-tw', 'ja', 'ko', 'es', 'fr', 'de', 'pt', 'ru'],
     name: {
       'en': 'JSON Formatter',
-      'zh-CN': 'JSON 格式化',
-      'zh-TW': 'JSON 格式化',
+      'zh-cn': 'JSON 格式化',
+      'zh-tw': 'JSON 格式化',
       'ja': 'JSON フォーマッター',
       'ko': 'JSON 포매터',
       'es': 'Formateador JSON',
@@ -34,8 +34,8 @@ export const TOOL_REGISTRY: ToolMeta[] = [
     },
     description: {
       'en': 'Format and validate JSON data with syntax highlighting',
-      'zh-CN': '格式化并验证 JSON 数据，支持语法高亮',
-      'zh-TW': '格式化並驗證 JSON 資料，支援語法高亮',
+      'zh-cn': '格式化并验证 JSON 数据，支持语法高亮',
+      'zh-tw': '格式化並驗證 JSON 資料，支援語法高亮',
       'ja': 'JSONデータをフォーマットして検証し、シンタックスハイライトを表示',
       'ko': '구문 강조와 함께 JSON 데이터를 포맷하고 유효성 검사',
       'es': 'Formatea y valida datos JSON con resaltado de sintaxis',
@@ -51,11 +51,11 @@ export const TOOL_REGISTRY: ToolMeta[] = [
     category: 'text',
     enabled: true,
     featured: true,
-    supportedLocales: ['en', 'zh-CN', 'zh-TW', 'ja', 'ko', 'es', 'fr', 'de', 'pt', 'ru'],
+    supportedLocales: ['en', 'zh-cn', 'zh-tw', 'ja', 'ko', 'es', 'fr', 'de', 'pt', 'ru'],
     name: {
       'en': 'Word Counter',
-      'zh-CN': '字符统计',
-      'zh-TW': '字元統計',
+      'zh-cn': '字符统计',
+      'zh-tw': '字元統計',
       'ja': '文字カウンター',
       'ko': '단어 카운터',
       'es': 'Contador de palabras',
@@ -66,8 +66,8 @@ export const TOOL_REGISTRY: ToolMeta[] = [
     },
     description: {
       'en': 'Count characters, words, and lines in your text',
-      'zh-CN': '统计文本中的字符数、单词数和行数',
-      'zh-TW': '統計文字中的字元數、單詞數和行數',
+      'zh-cn': '统计文本中的字符数、单词数和行数',
+      'zh-tw': '統計文字中的字元數、單詞數和行數',
       'ja': 'テキストの文字数、単語数、行数をカウント',
       'ko': '텍스트의 문자 수, 단어 수, 줄 수를 계산',
       'es': 'Cuenta caracteres, palabras y líneas en tu texto',

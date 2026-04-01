@@ -1,6 +1,6 @@
 import { Locale } from '../tools/registry';
 
-export const locales: Locale[] = ['en', 'zh-CN', 'zh-TW', 'ja', 'ko', 'es', 'fr', 'de', 'pt', 'ru'];
+export const locales: Locale[] = ['en', 'zh-cn', 'zh-tw', 'ja', 'ko', 'es', 'fr', 'de', 'pt', 'ru'];
 export const defaultLocale: Locale = 'en';
 
 /**
