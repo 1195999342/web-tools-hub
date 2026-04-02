@@ -4,8 +4,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "build:cf": "next build && tsx scripts/generate-sitemap.ts && tsx scripts/generate-headers.ts && tsx scripts/generate-redirects.ts",
+    "build": "next build && tsx scripts/fix-bracket-paths.ts",
+    "build:cf": "next build && tsx scripts/fix-bracket-paths.ts && tsx scripts/generate-sitemap.ts && tsx scripts/generate-headers.ts && tsx scripts/generate-redirects.ts",
     "start": "next start",
     "lint": "next lint",
     "test": "vitest --run",
