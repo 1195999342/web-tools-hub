@@ -13,7 +13,7 @@ export function convertRadix(input: string, fromRadix: Radix): ConversionResult 
   if (!input.trim()) return empty;
   try {
     const value = BigInt(fromRadix === 10 ? input : (fromRadix === 16 ? '0x' + input : (fromRadix === 8 ? '0o' + input : '0b' + input)));
-    const isNeg = value < 0n;
+    const isNeg = value < BigInt(0);
     const abs = isNeg ? -value : value;
     const prefix = isNeg ? '-' : '';
     return {
