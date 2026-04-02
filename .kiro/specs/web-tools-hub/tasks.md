@@ -210,7 +210,7 @@
   - 验证注册表中无重复 slug
 
 - [ ] 5. P1 批次：高价值工具实现（25 个工具）
-  - [ ] 5.1 JSON 工具组（4 个）
+  - [x] 5.1 JSON 工具组（4 个）
     - 实现 JSON 与其他格式互转（`tools/json-converter/`）：JSON ↔ XML/YAML/TOML/CSV，使用 Tabs 切换格式
     - 实现 JSON 转语言实体类（`tools/json-to-class/`）：支持 TypeScript/Java/Go/Python/C#/Swift/Kotlin/Dart/Rust/Ruby
     - 实现 JWT 解码器（`tools/jwt-decoder/`）：解码 Header/Payload/Signature，时间戳字段转可读日期
@@ -228,7 +228,7 @@
     - 验证 JSON → XML → JSON 产生等价结果
     - **Validates: Requirements 18.5**
 
-  - [ ] 5.4 编码加密工具组（4 个）
+  - [x] 5.4 编码加密工具组（4 个）
     - 实现 Unicode 与中文互转（`tools/unicode-converter/`）：\uXXXX 格式互转
     - 实现对称加密解密（`tools/symmetric-cipher/`）：AES/DES/3DES/RC4/Rabbit，支持模式和填充选择
     - 实现 HTML 转义/反转义（`tools/html-escape/`）：HTML 实体编码解码
@@ -247,14 +247,14 @@
     - 验证 AES 加密后解密等于原始明文
     - **Validates: Requirements 28.5**
 
-  - [ ] 5.7 文字处理工具组（3 个）
+  - [x] 5.7 文字处理工具组（3 个）
     - 实现文本去重（`tools/text-dedup/`）：去除重复行，支持大小写敏感/不敏感，显示行数对比
     - 实现文本排序（`tools/text-sort/`）：字母/数字/长度/随机排序，支持去除空行
     - 实现去除空行/空白处理（`tools/text-trim/`）：去空行、trim、合并空行、合并为一行
     - 每个工具：创建 logic.ts + index.tsx，注册到 registry，添加翻译
     - _Requirements: 68.1-68.4, 69.1-69.4, 70.1-70.3_
 
-  - [ ] 5.8 代码格式化工具组（4 个）
+  - [x] 5.8 代码格式化工具组（4 个）
     - 实现变量命名转换（`tools/naming-converter/`）：camelCase/PascalCase/snake_case/kebab-case 等互转
     - 实现 JavaScript/HTML 格式化（`tools/js-formatter/`）：格式化和压缩，自定义缩进
     - 实现 CSS 格式化与压缩（`tools/css-formatter/`）：格式化和压缩
@@ -262,7 +262,7 @@
     - 每个工具：创建 logic.ts + index.tsx，注册到 registry，添加翻译
     - _Requirements: 47.1-47.4, 43.1-43.5, 44.1-44.4, 45.1-45.4_
 
-  - [ ] 5.9 XML 格式化与压缩 + 转换工具组（3 个）
+  - [x] 5.9 XML 格式化与压缩 + 转换工具组（3 个）
     - 实现 XML 格式化与压缩（`tools/xml-formatter/`）：格式化、压缩、错误提示
     - 实现 Properties 转 YAML（`tools/properties-yaml/`）：.properties ↔ YAML 互转
     - 实现 JSON 转 SQL（`tools/json-to-sql/`）：JSON 数组生成 INSERT 语句，支持多种 SQL 方言
@@ -274,7 +274,7 @@
     - 验证合法 XML 格式化后再压缩保持语义等价
     - **Validates: Requirements 46.4**
 
-  - [ ] 5.11 其他 P1 工具组（7 个）
+  - [x] 5.11 其他 P1 工具组（7 个）
     - 实现代码对比/Diff 工具（`tools/diff-viewer/`）：并排和内联模式，颜色标注差异
     - 实现 Markdown 编辑器（`tools/markdown-editor/`）：左右分栏编辑预览，GFM 支持
     - 实现 Cron 表达式生成器（`tools/cron-generator/`）：可视化配置 + 人类可读描述 + 未来执行时间

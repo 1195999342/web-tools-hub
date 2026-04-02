@@ -147,6 +147,40 @@
       "match_count": "Найдено совпадений: {count}",
       "instructions": "Введите шаблон regex и тестовый текст. Совпадения подсвечиваются в реальном времени. Переключайте флаги по необходимости."
     },
+    "json-converter": {
+      "source_label": "Исходный формат",
+      "target_label": "Целевой формат",
+      "format_json": "JSON",
+      "format_yaml": "YAML",
+      "format_xml": "XML",
+      "format_toml": "TOML",
+      "format_csv": "CSV",
+      "input_placeholder": "Вставьте данные сюда...",
+      "convert_button": "Конвертировать",
+      "error_unsupported": "Неподдерживаемая конвертация",
+      "instructions": "Выберите исходный и целевой форматы, вставьте данные и нажмите Конвертировать."
+    },
+    "json-to-class": {
+      "input_placeholder": "Вставьте JSON сюда...",
+      "language_label": "Язык",
+      "root_name_label": "Имя корневого класса",
+      "generate_button": "Сгенерировать",
+      "instructions": "Вставьте данные JSON, выберите целевой язык и имя корневого класса, затем нажмите Сгенерировать."
+    },
+    "jwt-decoder": {
+      "input_placeholder": "Вставьте JWT-токен сюда...",
+      "decode_button": "Декодировать",
+      "header_label": "Заголовок",
+      "payload_label": "Полезная нагрузка",
+      "signature_label": "Подпись",
+      "timestamps_label": "Временные метки",
+      "instructions": "Вставьте JWT-токен и нажмите Декодировать для просмотра заголовка, полезной нагрузки и подписи. Временные метки отображаются как читаемые даты."
+    },
+    "json-schema": {
+      "input_placeholder": "Вставьте JSON сюда...",
+      "generate_button": "Сгенерировать схему",
+      "instructions": "Вставьте данные JSON и нажмите Сгенерировать схему для создания JSON Schema (Draft-07)."
+    },
     "qrcode": {
       "text_label": "Текст / URL",
       "text_placeholder": "Введите текст или URL для кодирования...",
@@ -155,6 +189,170 @@
       "bg_color": "Цвет фона",
       "coming_soon": "Генерация QR-кодов требует библиотеку. Скоро будет доступно!",
       "instructions": "Введите текст или URL для генерации QR-кода. Настройте размер и цвета."
+    },
+    "unicode-converter": {
+      "encode_tab": "Текст → Unicode",
+      "decode_tab": "Unicode → Текст",
+      "input_placeholder": "Введите текст или escape-последовательности Unicode...",
+      "encode_button": "Конвертировать в Unicode",
+      "decode_button": "Конвертировать в текст",
+      "instructions": "Конвертируйте текст в escape-последовательности Unicode (\\uXXXX) или декодируйте Unicode обратно в текст."
+    },
+    "symmetric-cipher": {
+      "encrypt_tab": "Зашифровать",
+      "decrypt_tab": "Расшифровать",
+      "input_placeholder": "Введите текст для шифрования или шифротекст для расшифровки...",
+      "password_label": "Пароль",
+      "password_placeholder": "Введите пароль шифрования...",
+      "encrypt_button": "Зашифровать",
+      "decrypt_button": "Расшифровать",
+      "instructions": "Зашифруйте текст с помощью AES-CBC или расшифруйте с тем же паролем."
+    },
+    "html-escape": {
+      "escape_tab": "Экранировать",
+      "unescape_tab": "Деэкранировать",
+      "input_placeholder": "Введите HTML-текст...",
+      "escape_button": "Экранировать",
+      "unescape_button": "Деэкранировать",
+      "instructions": "Экранируйте специальные символы HTML в сущности или деэкранируйте их."
+    },
+    "file-base64": {
+      "encode_tab": "File → Base64",
+      "decode_tab": "Base64 → File",
+      "drop_label": "Drop a file here or click to browse",
+      "decode_placeholder": "Paste Base64 string here...",
+      "decode_button": "Download as File",
+      "instructions": "Upload a file to get its Base64 and Data URI, or paste Base64 to download as a file."
+    },
+    "text-dedup": {
+      "input_placeholder": "Paste text with duplicate lines...",
+      "dedup_button": "Remove Duplicates",
+      "case_sensitive": "Case Sensitive",
+      "stats": "Original: {original} lines → Result: {result} lines (removed {removed})",
+      "instructions": "Paste text and remove duplicate lines. Toggle case sensitivity as needed."
+    },
+    "text-sort": {
+      "input_placeholder": "Paste text lines to sort...",
+      "mode_label": "Sort Mode",
+      "mode_alpha": "Alphabetical",
+      "mode_numeric": "Numeric",
+      "mode_length": "By Length",
+      "mode_random": "Random",
+      "descending": "Descending",
+      "sort_button": "Sort",
+      "instructions": "Paste text and sort lines by different criteria."
+    },
+    "text-trim": {
+      "input_placeholder": "Paste text to clean up...",
+      "mode_label": "Mode",
+      "mode_remove_empty": "Remove Empty Lines",
+      "mode_trim": "Trim Whitespace",
+      "mode_merge": "Merge Blank Lines",
+      "mode_join": "Join to One Line",
+      "trim_button": "Apply",
+      "instructions": "Clean up text by removing empty lines, trimming whitespace, or joining lines."
+    },
+    "naming-converter": {
+      "input_placeholder": "Enter a variable name (e.g. myVariableName)...",
+      "instructions": "Enter a variable name to see all naming convention conversions in real-time."
+    },
+    "js-formatter": {
+      "input_label": "Input",
+      "input_placeholder": "Paste JavaScript or HTML code...",
+      "output_label": "Output",
+      "beautify_button": "Beautify",
+      "minify_button": "Minify",
+      "instructions": "Paste JS/HTML code and click Beautify to format or Minify to compress."
+    },
+    "css-formatter": {
+      "input_label": "Input",
+      "input_placeholder": "Paste CSS code...",
+      "output_label": "Output",
+      "beautify_button": "Beautify",
+      "minify_button": "Minify",
+      "instructions": "Paste CSS code and click Beautify to format or Minify to compress."
+    },
+    "sql-formatter": {
+      "input_label": "Input",
+      "input_placeholder": "Paste SQL query...",
+      "output_label": "Output",
+      "format_button": "Format",
+      "minify_button": "Minify",
+      "instructions": "Paste SQL and click Format to uppercase keywords and indent, or Minify to compress."
+    },
+    "xml-formatter": {
+      "input_label": "Input",
+      "input_placeholder": "Paste XML document...",
+      "output_label": "Output",
+      "format_button": "Format",
+      "minify_button": "Minify",
+      "instructions": "Paste XML and click Format to indent or Minify to compress."
+    },
+    "properties-yaml": {
+      "props_to_yaml": "Properties → YAML",
+      "yaml_to_props": "YAML → Properties",
+      "input_placeholder": "Paste .properties or YAML content...",
+      "convert_button": "Convert",
+      "instructions": "Convert between .properties and YAML formats. Nested keys are supported."
+    },
+    "json-to-sql": {
+      "input_placeholder": "Paste a JSON array of objects...",
+      "table_name_label": "Table Name",
+      "convert_button": "Generate SQL",
+      "instructions": "Paste a JSON array and specify a table name to generate SQL INSERT statements."
+    },
+    "diff-viewer": {
+      "left_label": "Original",
+      "right_label": "Modified",
+      "left_placeholder": "Paste original text...",
+      "right_placeholder": "Paste modified text...",
+      "instructions": "Paste two texts to compare them side by side with color-coded differences."
+    },
+    "markdown-editor": {
+      "editor_label": "Markdown",
+      "preview_label": "Preview",
+      "input_placeholder": "Write Markdown here...",
+      "instructions": "Write Markdown on the left and see the rendered preview on the right."
+    },
+    "cron-generator": {
+      "expression_label": "Cron Expression",
+      "minute": "Minute",
+      "hour": "Hour",
+      "day_of_month": "Day",
+      "month": "Month",
+      "day_of_week": "Weekday",
+      "next_runs": "Next 5 Runs",
+      "instructions": "Build a cron expression by editing fields or typing directly. See human-readable description and next run times."
+    },
+    "unit-converter": {
+      "category_label": "Category",
+      "value_label": "Value",
+      "from_label": "From",
+      "to_label": "To",
+      "instructions": "Select a category, enter a value, and choose units to convert between."
+    },
+    "filesize-converter": {
+      "value_label": "Value",
+      "unit_label": "Unit",
+      "decimal_label": "Decimal (SI)",
+      "binary_label": "Binary (IEC)",
+      "instructions": "Enter a file size value and unit to see conversions in both decimal and binary systems."
+    },
+    "random-number": {
+      "min_label": "Min",
+      "max_label": "Max",
+      "count_label": "Count",
+      "float_label": "Float",
+      "generate_button": "Generate",
+      "instructions": "Set range and count, then generate random integers or floating-point numbers."
+    },
+    "php-serialize": {
+      "serialize_tab": "JSON → PHP",
+      "unserialize_tab": "PHP → JSON",
+      "input_placeholder": "Paste JSON or PHP serialized data...",
+      "serialize_button": "Serialize",
+      "unserialize_button": "Unserialize",
+      "instructions": "Convert JSON to PHP serialized format or unserialize PHP data back to JSON."
     }
   },
   "categories": {

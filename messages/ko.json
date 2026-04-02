@@ -147,6 +147,40 @@
       "match_count": "{count}개의 일치 항목 발견",
       "instructions": "정규식 패턴과 테스트 텍스트를 입력하세요. 일치 항목이 실시간으로 강조 표시됩니다. 필요에 따라 플래그를 전환하세요."
     },
+    "json-converter": {
+      "source_label": "소스 형식",
+      "target_label": "대상 형식",
+      "format_json": "JSON",
+      "format_yaml": "YAML",
+      "format_xml": "XML",
+      "format_toml": "TOML",
+      "format_csv": "CSV",
+      "input_placeholder": "여기에 데이터를 붙여넣으세요...",
+      "convert_button": "변환",
+      "error_unsupported": "지원되지 않는 변환",
+      "instructions": "소스 형식과 대상 형식을 선택하고 데이터를 붙여넣은 후 변환을 클릭하세요."
+    },
+    "json-to-class": {
+      "input_placeholder": "여기에 JSON을 붙여넣으세요...",
+      "language_label": "언어",
+      "root_name_label": "루트 클래스 이름",
+      "generate_button": "생성",
+      "instructions": "JSON 데이터를 붙여넣고 대상 언어와 루트 클래스 이름을 선택한 후 생성을 클릭하세요."
+    },
+    "jwt-decoder": {
+      "input_placeholder": "여기에 JWT 토큰을 붙여넣으세요...",
+      "decode_button": "디코딩",
+      "header_label": "헤더",
+      "payload_label": "페이로드",
+      "signature_label": "서명",
+      "timestamps_label": "타임스탬프",
+      "instructions": "JWT 토큰을 붙여넣고 디코딩을 클릭하면 헤더, 페이로드, 서명을 확인할 수 있습니다. 타임스탬프는 읽기 쉬운 날짜로 표시됩니다."
+    },
+    "json-schema": {
+      "input_placeholder": "여기에 JSON을 붙여넣으세요...",
+      "generate_button": "스키마 생성",
+      "instructions": "JSON 데이터를 붙여넣고 스키마 생성을 클릭하면 JSON Schema(Draft-07)가 생성됩니다."
+    },
     "qrcode": {
       "text_label": "텍스트 / URL",
       "text_placeholder": "인코딩할 텍스트 또는 URL을 입력...",
@@ -155,6 +189,170 @@
       "bg_color": "배경색",
       "coming_soon": "QR 코드 생성에는 라이브러리가 필요합니다. 곧 출시 예정!",
       "instructions": "텍스트 또는 URL을 입력하여 QR 코드를 생성합니다. 크기와 색상을 사용자 정의할 수 있습니다."
+    },
+    "unicode-converter": {
+      "encode_tab": "텍스트 → Unicode",
+      "decode_tab": "Unicode → 텍스트",
+      "input_placeholder": "텍스트 또는 Unicode 이스케이프 시퀀스를 입력...",
+      "encode_button": "Unicode로 변환",
+      "decode_button": "텍스트로 변환",
+      "instructions": "텍스트를 Unicode 이스케이프 시퀀스(\\uXXXX)로 변환하거나 Unicode를 텍스트로 디코딩합니다."
+    },
+    "symmetric-cipher": {
+      "encrypt_tab": "암호화",
+      "decrypt_tab": "복호화",
+      "input_placeholder": "암호화할 텍스트 또는 복호화할 암호문을 입력...",
+      "password_label": "비밀번호",
+      "password_placeholder": "암호화 비밀번호를 입력...",
+      "encrypt_button": "암호화",
+      "decrypt_button": "복호화",
+      "instructions": "AES-CBC로 텍스트를 암호화하거나 같은 비밀번호로 암호문을 복호화합니다."
+    },
+    "html-escape": {
+      "escape_tab": "이스케이프",
+      "unescape_tab": "언이스케이프",
+      "input_placeholder": "HTML 텍스트를 입력...",
+      "escape_button": "이스케이프",
+      "unescape_button": "언이스케이프",
+      "instructions": "HTML 특수 문자를 엔티티로 이스케이프하거나 언이스케이프합니다."
+    },
+    "file-base64": {
+      "encode_tab": "File → Base64",
+      "decode_tab": "Base64 → File",
+      "drop_label": "Drop a file here or click to browse",
+      "decode_placeholder": "Paste Base64 string here...",
+      "decode_button": "Download as File",
+      "instructions": "Upload a file to get its Base64 and Data URI, or paste Base64 to download as a file."
+    },
+    "text-dedup": {
+      "input_placeholder": "Paste text with duplicate lines...",
+      "dedup_button": "Remove Duplicates",
+      "case_sensitive": "Case Sensitive",
+      "stats": "Original: {original} lines → Result: {result} lines (removed {removed})",
+      "instructions": "Paste text and remove duplicate lines. Toggle case sensitivity as needed."
+    },
+    "text-sort": {
+      "input_placeholder": "Paste text lines to sort...",
+      "mode_label": "Sort Mode",
+      "mode_alpha": "Alphabetical",
+      "mode_numeric": "Numeric",
+      "mode_length": "By Length",
+      "mode_random": "Random",
+      "descending": "Descending",
+      "sort_button": "Sort",
+      "instructions": "Paste text and sort lines by different criteria."
+    },
+    "text-trim": {
+      "input_placeholder": "Paste text to clean up...",
+      "mode_label": "Mode",
+      "mode_remove_empty": "Remove Empty Lines",
+      "mode_trim": "Trim Whitespace",
+      "mode_merge": "Merge Blank Lines",
+      "mode_join": "Join to One Line",
+      "trim_button": "Apply",
+      "instructions": "Clean up text by removing empty lines, trimming whitespace, or joining lines."
+    },
+    "naming-converter": {
+      "input_placeholder": "Enter a variable name (e.g. myVariableName)...",
+      "instructions": "Enter a variable name to see all naming convention conversions in real-time."
+    },
+    "js-formatter": {
+      "input_label": "Input",
+      "input_placeholder": "Paste JavaScript or HTML code...",
+      "output_label": "Output",
+      "beautify_button": "Beautify",
+      "minify_button": "Minify",
+      "instructions": "Paste JS/HTML code and click Beautify to format or Minify to compress."
+    },
+    "css-formatter": {
+      "input_label": "Input",
+      "input_placeholder": "Paste CSS code...",
+      "output_label": "Output",
+      "beautify_button": "Beautify",
+      "minify_button": "Minify",
+      "instructions": "Paste CSS code and click Beautify to format or Minify to compress."
+    },
+    "sql-formatter": {
+      "input_label": "Input",
+      "input_placeholder": "Paste SQL query...",
+      "output_label": "Output",
+      "format_button": "Format",
+      "minify_button": "Minify",
+      "instructions": "Paste SQL and click Format to uppercase keywords and indent, or Minify to compress."
+    },
+    "xml-formatter": {
+      "input_label": "Input",
+      "input_placeholder": "Paste XML document...",
+      "output_label": "Output",
+      "format_button": "Format",
+      "minify_button": "Minify",
+      "instructions": "Paste XML and click Format to indent or Minify to compress."
+    },
+    "properties-yaml": {
+      "props_to_yaml": "Properties → YAML",
+      "yaml_to_props": "YAML → Properties",
+      "input_placeholder": "Paste .properties or YAML content...",
+      "convert_button": "Convert",
+      "instructions": "Convert between .properties and YAML formats. Nested keys are supported."
+    },
+    "json-to-sql": {
+      "input_placeholder": "Paste a JSON array of objects...",
+      "table_name_label": "Table Name",
+      "convert_button": "Generate SQL",
+      "instructions": "Paste a JSON array and specify a table name to generate SQL INSERT statements."
+    },
+    "diff-viewer": {
+      "left_label": "Original",
+      "right_label": "Modified",
+      "left_placeholder": "Paste original text...",
+      "right_placeholder": "Paste modified text...",
+      "instructions": "Paste two texts to compare them side by side with color-coded differences."
+    },
+    "markdown-editor": {
+      "editor_label": "Markdown",
+      "preview_label": "Preview",
+      "input_placeholder": "Write Markdown here...",
+      "instructions": "Write Markdown on the left and see the rendered preview on the right."
+    },
+    "cron-generator": {
+      "expression_label": "Cron Expression",
+      "minute": "Minute",
+      "hour": "Hour",
+      "day_of_month": "Day",
+      "month": "Month",
+      "day_of_week": "Weekday",
+      "next_runs": "Next 5 Runs",
+      "instructions": "Build a cron expression by editing fields or typing directly. See human-readable description and next run times."
+    },
+    "unit-converter": {
+      "category_label": "Category",
+      "value_label": "Value",
+      "from_label": "From",
+      "to_label": "To",
+      "instructions": "Select a category, enter a value, and choose units to convert between."
+    },
+    "filesize-converter": {
+      "value_label": "Value",
+      "unit_label": "Unit",
+      "decimal_label": "Decimal (SI)",
+      "binary_label": "Binary (IEC)",
+      "instructions": "Enter a file size value and unit to see conversions in both decimal and binary systems."
+    },
+    "random-number": {
+      "min_label": "Min",
+      "max_label": "Max",
+      "count_label": "Count",
+      "float_label": "Float",
+      "generate_button": "Generate",
+      "instructions": "Set range and count, then generate random integers or floating-point numbers."
+    },
+    "php-serialize": {
+      "serialize_tab": "JSON → PHP",
+      "unserialize_tab": "PHP → JSON",
+      "input_placeholder": "Paste JSON or PHP serialized data...",
+      "serialize_button": "Serialize",
+      "unserialize_button": "Unserialize",
+      "instructions": "Convert JSON to PHP serialized format or unserialize PHP data back to JSON."
     }
   },
   "categories": {
