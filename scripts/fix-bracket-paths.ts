@@ -45,16 +45,36 @@ function renameDirs(): void {
 // Build string replacement pairs for file content
 function buildReplacements(): Array<[string, string]> {
   const replacements: Array<[string, string]> = [];
+  const seenDirNames = new Set<string>();
+
   for (const [oldPath, newPath] of renameMap) {
     const oldRel = path.relative(OUT_DIR, oldPath).replace(/\\/g, '/');
     const newRel = path.relative(OUT_DIR, newPath).replace(/\\/g, '/');
-    // Replace in various encoded forms
+
+    // Full relative path replacement
     replacements.push([oldRel, newRel]);
-    // URL-encoded form: %5Blocale%5D -> _locale_
+
+    // URL-encoded full path: _next/static/chunks/app/%5Blocale%5D -> _next/static/chunks/app/_locale_
     const oldEncoded = oldRel.replace(/\[/g, '%5B').replace(/\]/g, '%5D');
-    const newEncoded = newRel;
-    replacements.push([oldEncoded, newEncoded]);
+    replacements.push([oldEncoded, newRel]);
+
+    // Directory name level replacements (for webpack chunk maps in JS)
+    const oldDirName = path.basename(oldPath); // e.g. [locale]
+    const newDirName = path.basename(newPath); // e.g. _locale_
+    if (!seenDirNames.has(oldDirName)) {
+      seenDirNames.add(oldDirName);
+      // Bare bracket form: [locale] -> _locale_
+      replacements.push([oldDirName, newDirName]);
+      // URL-encoded bracket form: %5Blocale%5D -> _locale_
+      const encodedDirName = oldDirName.replace(/\[/g, '%5B').replace(/\]/g, '%5D');
+      replacements.push([encodedDirName, newDirName]);
+      // Escaped bracket form (in JSON/JS strings): \\[locale\\] or \[locale\]
+      replacements.push(['\\[' + oldDirName.slice(1, -1) + '\\]', newDirName]);
+    }
   }
+
+  // Sort replacements by length descending so longer matches are replaced first
+  replacements.sort((a, b) => b[0].length - a[0].length);
   return replacements;
 }
 
