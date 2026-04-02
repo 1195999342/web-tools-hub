@@ -27,12 +27,134 @@
       "instructions": "Collez votre texte JSON dans la zone de saisie et cliquez sur Formater pour l'embellir.",
       "copy_result": "Copier le résultat"
     },
+    "base64": {
+      "encode_tab": "Encoder",
+      "decode_tab": "Décoder",
+      "input_placeholder": "Entrez le texte à encoder ou la chaîne Base64 à décoder...",
+      "encode_button": "Encoder",
+      "decode_button": "Décoder",
+      "url_safe_label": "URL-safe",
+      "error_invalid_base64": "Entrée Base64 invalide",
+      "instructions": "Entrez du texte et cliquez sur Encoder pour convertir en Base64, ou collez une chaîne Base64 et cliquez sur Décoder pour la reconvertir. Activez le mode URL-safe pour un encodage compatible avec les URL."
+    },
     "word-counter": {
       "input_placeholder": "Tapez ou collez votre texte ici...",
       "chars": "Caractères",
       "words": "Mots",
       "lines": "Lignes",
       "instructions": "Tapez ou collez votre texte pour voir les statistiques en temps réel."
+    },
+    "url-encoder": {
+      "encode_tab": "Encoder",
+      "decode_tab": "Décoder",
+      "input_placeholder": "Entrez le texte à encoder ou la chaîne encodée à décoder...",
+      "encode_button": "Encoder",
+      "decode_button": "Décoder",
+      "mode_label": "Mode d'encodage",
+      "error_invalid": "Entrée de décodage invalide",
+      "instructions": "Entrez du texte et cliquez sur Encoder pour l'encoder en URL, ou collez une chaîne encodée et cliquez sur Décoder. Choisissez entre les modes encodeURIComponent et encodeURI."
+    },
+    "timestamp": {
+      "current_ts": "Timestamp Unix actuel",
+      "seconds": "Secondes",
+      "milliseconds": "Millisecondes",
+      "unit_label": "Unité",
+      "timezone_label": "Fuseau horaire",
+      "ts_to_date": "Timestamp → Date",
+      "date_to_ts": "Date → Timestamp",
+      "ts_placeholder": "Entrez un timestamp Unix...",
+      "convert_button": "Convertir",
+      "error_invalid_ts": "Timestamp invalide",
+      "error_invalid_date": "Date invalide",
+      "instructions": "Convertissez entre les timestamps Unix et les dates lisibles. Le timestamp actuel se met à jour en temps réel."
+    },
+    "json-minify": {
+      "input_placeholder": "Collez votre JSON ici...",
+      "minify_button": "Minifier",
+      "escape_button": "Échapper",
+      "unescape_button": "Désechapper",
+      "error_invalid_json": "Entrée JSON invalide",
+      "instructions": "Collez du JSON et cliquez sur Minifier pour compresser, Échapper pour échapper les caractères spéciaux, ou Désechapper pour inverser."
+    },
+    "uuid-generator": {
+      "quantity_label": "Quantité",
+      "format_label": "Format",
+      "format_standard": "Standard",
+      "format_no_dash": "Sans tirets",
+      "format_uppercase": "Majuscules",
+      "format_lowercase": "Minuscules",
+      "generate_button": "Générer",
+      "instructions": "Générez des identifiants UUID v4. Choisissez la quantité et le format, puis cliquez sur Générer."
+    },
+    "hash-calculator": {
+      "input_placeholder": "Entrez le texte à hacher...",
+      "uppercase_label": "Majuscules",
+      "instructions": "Entrez du texte et sélectionnez les algorithmes de hachage. Les résultats se mettent à jour en temps réel."
+    },
+    "color-converter": {
+      "color_label": "Couleur",
+      "instructions": "Choisissez une couleur ou entrez une valeur HEX pour voir toutes les conversions de format."
+    },
+    "radix-converter": {
+      "input_label": "Entrée",
+      "input_placeholder": "Entrez un nombre...",
+      "source_radix": "Base source",
+      "binary": "Binaire (2)",
+      "octal": "Octal (8)",
+      "decimal": "Décimal (10)",
+      "hex": "Hexadécimal (16)",
+      "error_invalid": "Entrée invalide pour la base sélectionnée",
+      "instructions": "Entrez un nombre et sélectionnez sa base. Les quatre conversions de base sont affichées simultanément."
+    },
+    "case-converter": {
+      "input_placeholder": "Entrez le texte à convertir...",
+      "mode_upper": "MAJUSCULES",
+      "mode_lower": "minuscules",
+      "mode_title": "Titre",
+      "mode_sentence": "Phrase",
+      "mode_toggle": "Inverser",
+      "instructions": "Entrez du texte et sélectionnez un mode de conversion. Le résultat se met à jour en temps réel."
+    },
+    "password-generator": {
+      "length_label": "Longueur",
+      "uppercase": "Majuscules (A-Z)",
+      "lowercase": "Minuscules (a-z)",
+      "digits": "Chiffres (0-9)",
+      "symbols": "Symboles (!@#...)",
+      "count_label": "Quantité",
+      "generate_button": "Générer",
+      "strength": "Force",
+      "strength_weak": "Faible",
+      "strength_fair": "Moyen",
+      "strength_good": "Bon",
+      "strength_strong": "Fort",
+      "instructions": "Configurez les options de mot de passe et cliquez sur Générer. Utilisez l'indicateur de force pour évaluer la sécurité."
+    },
+    "json-sort": {
+      "input_placeholder": "Collez votre JSON ici...",
+      "order_label": "Ordre de tri",
+      "order_asc": "Croissant (A→Z)",
+      "order_desc": "Décroissant (Z→A)",
+      "sort_button": "Trier",
+      "error_invalid_json": "Entrée JSON invalide",
+      "instructions": "Collez un objet JSON et cliquez sur Trier pour ordonner les clés alphabétiquement. L'ordre des tableaux est préservé."
+    },
+    "regex-tester": {
+      "pattern_label": "Expression régulière",
+      "pattern_placeholder": "Entrez un motif regex...",
+      "text_label": "Texte de test",
+      "text_placeholder": "Entrez le texte à tester...",
+      "match_count": "{count} correspondance(s) trouvée(s)",
+      "instructions": "Entrez un motif regex et du texte de test. Les correspondances sont surlignées en temps réel. Activez les drapeaux selon vos besoins."
+    },
+    "qrcode": {
+      "text_label": "Texte / URL",
+      "text_placeholder": "Entrez le texte ou l'URL à encoder...",
+      "size_label": "Taille (px)",
+      "fg_color": "Couleur avant",
+      "bg_color": "Couleur arrière",
+      "coming_soon": "La génération de QR codes nécessite une bibliothèque. Bientôt disponible !",
+      "instructions": "Entrez du texte ou une URL pour générer un QR code. Personnalisez la taille et les couleurs."
     }
   },
   "categories": {
@@ -42,6 +164,10 @@
     "color": "Couleur",
     "network": "Réseau",
     "math": "Mathématiques",
+    "converter": "Convertisseur",
+    "formatter": "Formateur",
+    "image": "Outils d'image",
+    "css": "Outils CSS",
     "misc": "Divers"
   },
   "errors": {

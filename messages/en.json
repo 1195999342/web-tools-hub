@@ -27,12 +27,134 @@
       "instructions": "Paste your JSON text in the input area and click Format to beautify it.",
       "copy_result": "Copy Result"
     },
+    "base64": {
+      "encode_tab": "Encode",
+      "decode_tab": "Decode",
+      "input_placeholder": "Enter text to encode or Base64 string to decode...",
+      "encode_button": "Encode",
+      "decode_button": "Decode",
+      "url_safe_label": "URL-safe",
+      "error_invalid_base64": "Invalid Base64 input",
+      "instructions": "Enter text and click Encode to convert to Base64, or paste a Base64 string and click Decode to convert back. Toggle URL-safe mode for URL-compatible encoding."
+    },
     "word-counter": {
       "input_placeholder": "Type or paste your text here...",
       "chars": "Characters",
       "words": "Words",
       "lines": "Lines",
       "instructions": "Type or paste your text to see real-time statistics."
+    },
+    "url-encoder": {
+      "encode_tab": "Encode",
+      "decode_tab": "Decode",
+      "input_placeholder": "Enter text to encode or encoded string to decode...",
+      "encode_button": "Encode",
+      "decode_button": "Decode",
+      "mode_label": "Encoding Mode",
+      "error_invalid": "Invalid input for decoding",
+      "instructions": "Enter text and click Encode to URL-encode it, or paste an encoded string and click Decode. Choose between encodeURIComponent and encodeURI modes."
+    },
+    "timestamp": {
+      "current_ts": "Current Unix Timestamp",
+      "seconds": "Seconds",
+      "milliseconds": "Milliseconds",
+      "unit_label": "Unit",
+      "timezone_label": "Timezone",
+      "ts_to_date": "Timestamp → Date",
+      "date_to_ts": "Date → Timestamp",
+      "ts_placeholder": "Enter Unix timestamp...",
+      "convert_button": "Convert",
+      "error_invalid_ts": "Invalid timestamp",
+      "error_invalid_date": "Invalid date",
+      "instructions": "Convert between Unix timestamps and human-readable dates. The current timestamp updates in real-time."
+    },
+    "json-minify": {
+      "input_placeholder": "Paste your JSON here...",
+      "minify_button": "Minify",
+      "escape_button": "Escape",
+      "unescape_button": "Unescape",
+      "error_invalid_json": "Invalid JSON input",
+      "instructions": "Paste JSON and click Minify to compress, Escape to escape special characters, or Unescape to reverse escaping."
+    },
+    "uuid-generator": {
+      "quantity_label": "Quantity",
+      "format_label": "Format",
+      "format_standard": "Standard",
+      "format_no_dash": "No Dashes",
+      "format_uppercase": "Uppercase",
+      "format_lowercase": "Lowercase",
+      "generate_button": "Generate",
+      "instructions": "Generate UUID v4 identifiers. Choose quantity and format, then click Generate."
+    },
+    "hash-calculator": {
+      "input_placeholder": "Enter text to hash...",
+      "uppercase_label": "Uppercase",
+      "instructions": "Enter text and select hash algorithms. Results update in real-time."
+    },
+    "color-converter": {
+      "color_label": "Color",
+      "instructions": "Pick a color or enter a HEX value to see all format conversions."
+    },
+    "radix-converter": {
+      "input_label": "Input",
+      "input_placeholder": "Enter a number...",
+      "source_radix": "Source Base",
+      "binary": "Binary (2)",
+      "octal": "Octal (8)",
+      "decimal": "Decimal (10)",
+      "hex": "Hexadecimal (16)",
+      "error_invalid": "Invalid input for the selected base",
+      "instructions": "Enter a number and select its base. All four base conversions are shown simultaneously."
+    },
+    "case-converter": {
+      "input_placeholder": "Enter text to convert...",
+      "mode_upper": "UPPERCASE",
+      "mode_lower": "lowercase",
+      "mode_title": "Title Case",
+      "mode_sentence": "Sentence case",
+      "mode_toggle": "tOGGLE",
+      "instructions": "Enter text and select a conversion mode. The result updates in real-time."
+    },
+    "password-generator": {
+      "length_label": "Length",
+      "uppercase": "Uppercase (A-Z)",
+      "lowercase": "Lowercase (a-z)",
+      "digits": "Digits (0-9)",
+      "symbols": "Symbols (!@#...)",
+      "count_label": "Count",
+      "generate_button": "Generate",
+      "strength": "Strength",
+      "strength_weak": "Weak",
+      "strength_fair": "Fair",
+      "strength_good": "Good",
+      "strength_strong": "Strong",
+      "instructions": "Configure password options and click Generate. Use the strength indicator to evaluate security."
+    },
+    "json-sort": {
+      "input_placeholder": "Paste your JSON here...",
+      "order_label": "Sort Order",
+      "order_asc": "Ascending (A→Z)",
+      "order_desc": "Descending (Z→A)",
+      "sort_button": "Sort",
+      "error_invalid_json": "Invalid JSON input",
+      "instructions": "Paste a JSON object and click Sort to order keys alphabetically. Array order is preserved."
+    },
+    "regex-tester": {
+      "pattern_label": "Regular Expression",
+      "pattern_placeholder": "Enter regex pattern...",
+      "text_label": "Test Text",
+      "text_placeholder": "Enter text to test against...",
+      "match_count": "{count} match(es) found",
+      "instructions": "Enter a regex pattern and test text. Matches are highlighted in real-time. Toggle flags as needed."
+    },
+    "qrcode": {
+      "text_label": "Text / URL",
+      "text_placeholder": "Enter text or URL to encode...",
+      "size_label": "Size (px)",
+      "fg_color": "Foreground",
+      "bg_color": "Background",
+      "coming_soon": "QR code generation requires a library. Coming soon!",
+      "instructions": "Enter text or a URL to generate a QR code. Customize size and colors."
     }
   },
   "categories": {
@@ -42,6 +164,10 @@
     "color": "Color",
     "network": "Network",
     "math": "Math",
+    "converter": "Format Converter",
+    "formatter": "Code Formatter",
+    "image": "Image Tools",
+    "css": "CSS Tools",
     "misc": "Misc"
   },
   "errors": {

@@ -11,7 +11,7 @@ interface HomePageProps {
   params: Promise<{ locale: string }>;
 }
 
-const CATEGORIES: ToolCategory[] = ['text', 'json', 'encoding', 'color', 'network', 'math', 'misc'];
+const CATEGORIES: ToolCategory[] = ['text', 'json', 'encoding', 'color', 'network', 'math', 'converter', 'formatter', 'image', 'css', 'misc'];
 
 export default function HomePage({ params }: HomePageProps) {
   const { locale } = useParams() as { locale: string };

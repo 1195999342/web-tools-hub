@@ -27,12 +27,134 @@
       "instructions": "Fügen Sie Ihren JSON-Text in den Eingabebereich ein und klicken Sie auf Formatieren, um ihn zu verschönern.",
       "copy_result": "Ergebnis kopieren"
     },
+    "base64": {
+      "encode_tab": "Kodieren",
+      "decode_tab": "Dekodieren",
+      "input_placeholder": "Text zum Kodieren oder Base64-Zeichenkette zum Dekodieren eingeben...",
+      "encode_button": "Kodieren",
+      "decode_button": "Dekodieren",
+      "url_safe_label": "URL-sicher",
+      "error_invalid_base64": "Ungültige Base64-Eingabe",
+      "instructions": "Geben Sie Text ein und klicken Sie auf Kodieren, um in Base64 umzuwandeln, oder fügen Sie eine Base64-Zeichenkette ein und klicken Sie auf Dekodieren. Aktivieren Sie den URL-sicheren Modus für URL-kompatible Kodierung."
+    },
     "word-counter": {
       "input_placeholder": "Text hier eingeben oder einfügen...",
       "chars": "Zeichen",
       "words": "Wörter",
       "lines": "Zeilen",
       "instructions": "Geben Sie Ihren Text ein oder fügen Sie ihn ein, um Echtzeitstatistiken zu sehen."
+    },
+    "url-encoder": {
+      "encode_tab": "Kodieren",
+      "decode_tab": "Dekodieren",
+      "input_placeholder": "Text zum Kodieren oder kodierte Zeichenkette zum Dekodieren eingeben...",
+      "encode_button": "Kodieren",
+      "decode_button": "Dekodieren",
+      "mode_label": "Kodierungsmodus",
+      "error_invalid": "Ungültige Dekodierungseingabe",
+      "instructions": "Geben Sie Text ein und klicken Sie auf Kodieren für URL-Kodierung, oder fügen Sie eine kodierte Zeichenkette ein und klicken Sie auf Dekodieren. Wählen Sie zwischen encodeURIComponent- und encodeURI-Modi."
+    },
+    "timestamp": {
+      "current_ts": "Aktueller Unix-Zeitstempel",
+      "seconds": "Sekunden",
+      "milliseconds": "Millisekunden",
+      "unit_label": "Einheit",
+      "timezone_label": "Zeitzone",
+      "ts_to_date": "Zeitstempel → Datum",
+      "date_to_ts": "Datum → Zeitstempel",
+      "ts_placeholder": "Unix-Zeitstempel eingeben...",
+      "convert_button": "Konvertieren",
+      "error_invalid_ts": "Ungültiger Zeitstempel",
+      "error_invalid_date": "Ungültiges Datum",
+      "instructions": "Konvertieren Sie zwischen Unix-Zeitstempeln und lesbaren Daten. Der aktuelle Zeitstempel wird in Echtzeit aktualisiert."
+    },
+    "json-minify": {
+      "input_placeholder": "JSON hier einfügen...",
+      "minify_button": "Minifizieren",
+      "escape_button": "Escapen",
+      "unescape_button": "Unescapen",
+      "error_invalid_json": "Ungültige JSON-Eingabe",
+      "instructions": "Fügen Sie JSON ein und klicken Sie auf Minifizieren zum Komprimieren, Escapen zum Escapen von Sonderzeichen oder Unescapen zum Umkehren."
+    },
+    "uuid-generator": {
+      "quantity_label": "Anzahl",
+      "format_label": "Format",
+      "format_standard": "Standard",
+      "format_no_dash": "Ohne Bindestriche",
+      "format_uppercase": "Großbuchstaben",
+      "format_lowercase": "Kleinbuchstaben",
+      "generate_button": "Generieren",
+      "instructions": "Generieren Sie UUID v4-Kennungen. Wählen Sie Anzahl und Format, dann klicken Sie auf Generieren."
+    },
+    "hash-calculator": {
+      "input_placeholder": "Text zum Hashen eingeben...",
+      "uppercase_label": "Großbuchstaben",
+      "instructions": "Geben Sie Text ein und wählen Sie Hash-Algorithmen. Die Ergebnisse werden in Echtzeit aktualisiert."
+    },
+    "color-converter": {
+      "color_label": "Farbe",
+      "instructions": "Wählen Sie eine Farbe oder geben Sie einen HEX-Wert ein, um alle Formatkonvertierungen zu sehen."
+    },
+    "radix-converter": {
+      "input_label": "Eingabe",
+      "input_placeholder": "Zahl eingeben...",
+      "source_radix": "Quellbasis",
+      "binary": "Binär (2)",
+      "octal": "Oktal (8)",
+      "decimal": "Dezimal (10)",
+      "hex": "Hexadezimal (16)",
+      "error_invalid": "Ungültige Eingabe für die gewählte Basis",
+      "instructions": "Geben Sie eine Zahl ein und wählen Sie ihre Basis. Alle vier Basiskonvertierungen werden gleichzeitig angezeigt."
+    },
+    "case-converter": {
+      "input_placeholder": "Text zum Konvertieren eingeben...",
+      "mode_upper": "GROSSBUCHSTABEN",
+      "mode_lower": "kleinbuchstaben",
+      "mode_title": "Titelschreibung",
+      "mode_sentence": "Satzschreibung",
+      "mode_toggle": "Umschalten",
+      "instructions": "Geben Sie Text ein und wählen Sie einen Konvertierungsmodus. Das Ergebnis wird in Echtzeit aktualisiert."
+    },
+    "password-generator": {
+      "length_label": "Länge",
+      "uppercase": "Großbuchstaben (A-Z)",
+      "lowercase": "Kleinbuchstaben (a-z)",
+      "digits": "Ziffern (0-9)",
+      "symbols": "Symbole (!@#...)",
+      "count_label": "Anzahl",
+      "generate_button": "Generieren",
+      "strength": "Stärke",
+      "strength_weak": "Schwach",
+      "strength_fair": "Mittel",
+      "strength_good": "Gut",
+      "strength_strong": "Stark",
+      "instructions": "Konfigurieren Sie die Passwortoptionen und klicken Sie auf Generieren. Verwenden Sie den Stärkeindikator zur Sicherheitsbewertung."
+    },
+    "json-sort": {
+      "input_placeholder": "JSON hier einfügen...",
+      "order_label": "Sortierreihenfolge",
+      "order_asc": "Aufsteigend (A→Z)",
+      "order_desc": "Absteigend (Z→A)",
+      "sort_button": "Sortieren",
+      "error_invalid_json": "Ungültige JSON-Eingabe",
+      "instructions": "Fügen Sie ein JSON-Objekt ein und klicken Sie auf Sortieren, um die Schlüssel alphabetisch zu ordnen. Die Array-Reihenfolge bleibt erhalten."
+    },
+    "regex-tester": {
+      "pattern_label": "Regulärer Ausdruck",
+      "pattern_placeholder": "Regex-Muster eingeben...",
+      "text_label": "Testtext",
+      "text_placeholder": "Text zum Testen eingeben...",
+      "match_count": "{count} Treffer gefunden",
+      "instructions": "Geben Sie ein Regex-Muster und Testtext ein. Treffer werden in Echtzeit hervorgehoben. Schalten Sie Flags nach Bedarf um."
+    },
+    "qrcode": {
+      "text_label": "Text / URL",
+      "text_placeholder": "Text oder URL zum Kodieren eingeben...",
+      "size_label": "Größe (px)",
+      "fg_color": "Vordergrundfarbe",
+      "bg_color": "Hintergrundfarbe",
+      "coming_soon": "QR-Code-Generierung erfordert eine Bibliothek. Kommt bald!",
+      "instructions": "Geben Sie Text oder eine URL ein, um einen QR-Code zu generieren. Passen Sie Größe und Farben an."
     }
   },
   "categories": {
@@ -42,6 +164,10 @@
     "color": "Farbe",
     "network": "Netzwerk",
     "math": "Mathematik",
+    "converter": "Konverter",
+    "formatter": "Formatierer",
+    "image": "Bildwerkzeuge",
+    "css": "CSS-Werkzeuge",
     "misc": "Sonstiges"
   },
   "errors": {

@@ -27,12 +27,134 @@
       "instructions": "입력 영역에 JSON 텍스트를 붙여넣고 포맷 버튼을 클릭하여 정리하세요.",
       "copy_result": "결과 복사"
     },
+    "base64": {
+      "encode_tab": "인코딩",
+      "decode_tab": "디코딩",
+      "input_placeholder": "인코딩할 텍스트 또는 디코딩할 Base64 문자열을 입력...",
+      "encode_button": "인코딩",
+      "decode_button": "디코딩",
+      "url_safe_label": "URL 안전 모드",
+      "error_invalid_base64": "잘못된 Base64 입력",
+      "instructions": "텍스트를 입력하고 인코딩을 클릭하면 Base64로 변환됩니다. Base64 문자열을 붙여넣고 디코딩을 클릭하면 원래 텍스트로 복원됩니다. URL 안전 모드를 켜면 URL 호환 인코딩이 생성됩니다."
+    },
     "word-counter": {
       "input_placeholder": "여기에 텍스트를 입력하거나 붙여넣으세요...",
       "chars": "문자 수",
       "words": "단어 수",
       "lines": "줄 수",
       "instructions": "텍스트를 입력하거나 붙여넣어 실시간 통계를 확인하세요."
+    },
+    "url-encoder": {
+      "encode_tab": "인코딩",
+      "decode_tab": "디코딩",
+      "input_placeholder": "인코딩할 텍스트 또는 디코딩할 문자열을 입력...",
+      "encode_button": "인코딩",
+      "decode_button": "디코딩",
+      "mode_label": "인코딩 모드",
+      "error_invalid": "잘못된 디코딩 입력",
+      "instructions": "텍스트를 입력하고 인코딩을 클릭하면 URL 인코딩됩니다. 인코딩된 문자열을 붙여넣고 디코딩을 클릭하면 원래 텍스트로 복원됩니다. encodeURIComponent와 encodeURI 모드를 선택할 수 있습니다."
+    },
+    "timestamp": {
+      "current_ts": "현재 Unix 타임스탬프",
+      "seconds": "초",
+      "milliseconds": "밀리초",
+      "unit_label": "단위",
+      "timezone_label": "시간대",
+      "ts_to_date": "타임스탬프 → 날짜",
+      "date_to_ts": "날짜 → 타임스탬프",
+      "ts_placeholder": "Unix 타임스탬프를 입력...",
+      "convert_button": "변환",
+      "error_invalid_ts": "잘못된 타임스탬프",
+      "error_invalid_date": "잘못된 날짜",
+      "instructions": "Unix 타임스탬프와 날짜를 상호 변환합니다. 현재 타임스탬프는 실시간으로 업데이트됩니다."
+    },
+    "json-minify": {
+      "input_placeholder": "여기에 JSON을 붙여넣으세요...",
+      "minify_button": "압축",
+      "escape_button": "이스케이프",
+      "unescape_button": "언이스케이프",
+      "error_invalid_json": "잘못된 JSON 입력",
+      "instructions": "JSON을 붙여넣고 압축을 클릭하여 압축하거나, 이스케이프로 특수 문자를 이스케이프하거나, 언이스케이프로 원래대로 복원합니다."
+    },
+    "uuid-generator": {
+      "quantity_label": "수량",
+      "format_label": "형식",
+      "format_standard": "표준",
+      "format_no_dash": "대시 없음",
+      "format_uppercase": "대문자",
+      "format_lowercase": "소문자",
+      "generate_button": "생성",
+      "instructions": "UUID v4 식별자를 생성합니다. 수량과 형식을 선택한 후 생성을 클릭하세요."
+    },
+    "hash-calculator": {
+      "input_placeholder": "해시할 텍스트를 입력...",
+      "uppercase_label": "대문자",
+      "instructions": "텍스트를 입력하고 해시 알고리즘을 선택하세요. 결과가 실시간으로 업데이트됩니다."
+    },
+    "color-converter": {
+      "color_label": "색상",
+      "instructions": "색상을 선택하거나 HEX 값을 입력하여 모든 형식 변환을 확인하세요."
+    },
+    "radix-converter": {
+      "input_label": "입력",
+      "input_placeholder": "숫자를 입력...",
+      "source_radix": "원본 진법",
+      "binary": "2진수 (2)",
+      "octal": "8진수 (8)",
+      "decimal": "10진수 (10)",
+      "hex": "16진수 (16)",
+      "error_invalid": "선택한 진법에 대해 잘못된 입력",
+      "instructions": "숫자를 입력하고 진법을 선택하세요. 네 가지 진법 변환 결과가 동시에 표시됩니다."
+    },
+    "case-converter": {
+      "input_placeholder": "변환할 텍스트를 입력...",
+      "mode_upper": "대문자",
+      "mode_lower": "소문자",
+      "mode_title": "제목 대소문자",
+      "mode_sentence": "문장 대소문자",
+      "mode_toggle": "대소문자 전환",
+      "instructions": "텍스트를 입력하고 변환 모드를 선택하세요. 결과가 실시간으로 업데이트됩니다."
+    },
+    "password-generator": {
+      "length_label": "길이",
+      "uppercase": "대문자 (A-Z)",
+      "lowercase": "소문자 (a-z)",
+      "digits": "숫자 (0-9)",
+      "symbols": "기호 (!@#...)",
+      "count_label": "수량",
+      "generate_button": "생성",
+      "strength": "강도",
+      "strength_weak": "약함",
+      "strength_fair": "보통",
+      "strength_good": "양호",
+      "strength_strong": "강함",
+      "instructions": "비밀번호 옵션을 설정하고 생성을 클릭하세요. 강도 표시기로 보안을 평가할 수 있습니다."
+    },
+    "json-sort": {
+      "input_placeholder": "여기에 JSON을 붙여넣으세요...",
+      "order_label": "정렬 순서",
+      "order_asc": "오름차순 (A→Z)",
+      "order_desc": "내림차순 (Z→A)",
+      "sort_button": "정렬",
+      "error_invalid_json": "잘못된 JSON 입력",
+      "instructions": "JSON 객체를 붙여넣고 정렬을 클릭하면 키가 알파벳순으로 정렬됩니다. 배열 순서는 유지됩니다."
+    },
+    "regex-tester": {
+      "pattern_label": "정규식",
+      "pattern_placeholder": "정규식 패턴을 입력...",
+      "text_label": "테스트 텍스트",
+      "text_placeholder": "테스트할 텍스트를 입력...",
+      "match_count": "{count}개의 일치 항목 발견",
+      "instructions": "정규식 패턴과 테스트 텍스트를 입력하세요. 일치 항목이 실시간으로 강조 표시됩니다. 필요에 따라 플래그를 전환하세요."
+    },
+    "qrcode": {
+      "text_label": "텍스트 / URL",
+      "text_placeholder": "인코딩할 텍스트 또는 URL을 입력...",
+      "size_label": "크기 (px)",
+      "fg_color": "전경색",
+      "bg_color": "배경색",
+      "coming_soon": "QR 코드 생성에는 라이브러리가 필요합니다. 곧 출시 예정!",
+      "instructions": "텍스트 또는 URL을 입력하여 QR 코드를 생성합니다. 크기와 색상을 사용자 정의할 수 있습니다."
     }
   },
   "categories": {
@@ -42,6 +164,10 @@
     "color": "색상",
     "network": "네트워크",
     "math": "수학",
+    "converter": "형식 변환",
+    "formatter": "코드 포매터",
+    "image": "이미지 도구",
+    "css": "CSS 도구",
     "misc": "기타"
   },
   "errors": {

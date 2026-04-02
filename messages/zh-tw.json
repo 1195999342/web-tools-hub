@@ -27,12 +27,134 @@
       "instructions": "在輸入區域貼上 JSON 文字，點擊格式化按鈕進行美化。",
       "copy_result": "複製結果"
     },
+    "base64": {
+      "encode_tab": "編碼",
+      "decode_tab": "解碼",
+      "input_placeholder": "輸入要編碼的文字或要解碼的 Base64 字串...",
+      "encode_button": "編碼",
+      "decode_button": "解碼",
+      "url_safe_label": "URL 安全模式",
+      "error_invalid_base64": "無效的 Base64 輸入",
+      "instructions": "輸入文字並點擊編碼將其轉換為 Base64，或貼上 Base64 字串並點擊解碼還原。開啟 URL 安全模式可產生 URL 相容的編碼。"
+    },
     "word-counter": {
       "input_placeholder": "在此輸入或貼上文字...",
       "chars": "字元數",
       "words": "單詞數",
       "lines": "行數",
       "instructions": "輸入或貼上文字以查看即時統計資料。"
+    },
+    "url-encoder": {
+      "encode_tab": "編碼",
+      "decode_tab": "解碼",
+      "input_placeholder": "輸入要編碼的文字或要解碼的編碼字串...",
+      "encode_button": "編碼",
+      "decode_button": "解碼",
+      "mode_label": "編碼模式",
+      "error_invalid": "無效的解碼輸入",
+      "instructions": "輸入文字並點擊編碼進行 URL 編碼，或貼上編碼字串並點擊解碼。可選擇 encodeURIComponent 和 encodeURI 模式。"
+    },
+    "timestamp": {
+      "current_ts": "目前 Unix 時間戳",
+      "seconds": "秒",
+      "milliseconds": "毫秒",
+      "unit_label": "單位",
+      "timezone_label": "時區",
+      "ts_to_date": "時間戳 → 日期",
+      "date_to_ts": "日期 → 時間戳",
+      "ts_placeholder": "輸入 Unix 時間戳...",
+      "convert_button": "轉換",
+      "error_invalid_ts": "無效的時間戳",
+      "error_invalid_date": "無效的日期",
+      "instructions": "在 Unix 時間戳和可讀日期之間互轉。目前時間戳即時更新。"
+    },
+    "json-minify": {
+      "input_placeholder": "在此貼上 JSON...",
+      "minify_button": "壓縮",
+      "escape_button": "轉義",
+      "unescape_button": "反轉義",
+      "error_invalid_json": "無效的 JSON 輸入",
+      "instructions": "貼上 JSON 並點擊壓縮來壓縮，轉義來轉義特殊字元，或反轉義來還原。"
+    },
+    "uuid-generator": {
+      "quantity_label": "數量",
+      "format_label": "格式",
+      "format_standard": "標準格式",
+      "format_no_dash": "無連字符",
+      "format_uppercase": "大寫",
+      "format_lowercase": "小寫",
+      "generate_button": "產生",
+      "instructions": "產生 UUID v4 識別碼。選擇數量和格式，然後點擊產生。"
+    },
+    "hash-calculator": {
+      "input_placeholder": "輸入要計算雜湊的文字...",
+      "uppercase_label": "大寫",
+      "instructions": "輸入文字並選擇雜湊演算法。結果即時更新。"
+    },
+    "color-converter": {
+      "color_label": "顏色",
+      "instructions": "選擇顏色或輸入 HEX 值以查看所有格式轉換。"
+    },
+    "radix-converter": {
+      "input_label": "輸入",
+      "input_placeholder": "輸入一個數字...",
+      "source_radix": "來源進制",
+      "binary": "二進制 (2)",
+      "octal": "八進制 (8)",
+      "decimal": "十進制 (10)",
+      "hex": "十六進制 (16)",
+      "error_invalid": "輸入對所選進制無效",
+      "instructions": "輸入數字並選擇其進制。四種進制轉換結果同時顯示。"
+    },
+    "case-converter": {
+      "input_placeholder": "輸入要轉換的文字...",
+      "mode_upper": "全大寫",
+      "mode_lower": "全小寫",
+      "mode_title": "標題大寫",
+      "mode_sentence": "句首大寫",
+      "mode_toggle": "大小寫互換",
+      "instructions": "輸入文字並選擇轉換模式。結果即時更新。"
+    },
+    "password-generator": {
+      "length_label": "長度",
+      "uppercase": "大寫字母 (A-Z)",
+      "lowercase": "小寫字母 (a-z)",
+      "digits": "數字 (0-9)",
+      "symbols": "符號 (!@#...)",
+      "count_label": "數量",
+      "generate_button": "產生",
+      "strength": "強度",
+      "strength_weak": "弱",
+      "strength_fair": "一般",
+      "strength_good": "良好",
+      "strength_strong": "強",
+      "instructions": "設定密碼選項並點擊產生。使用強度指示器評估安全性。"
+    },
+    "json-sort": {
+      "input_placeholder": "在此貼上 JSON...",
+      "order_label": "排序方式",
+      "order_asc": "升序 (A→Z)",
+      "order_desc": "降序 (Z→A)",
+      "sort_button": "排序",
+      "error_invalid_json": "無效的 JSON 輸入",
+      "instructions": "貼上 JSON 物件並點擊排序以按字母順序排列鍵。陣列順序保持不變。"
+    },
+    "regex-tester": {
+      "pattern_label": "正規表達式",
+      "pattern_placeholder": "輸入正規表達式...",
+      "text_label": "測試文字",
+      "text_placeholder": "輸入要測試的文字...",
+      "match_count": "找到 {count} 個匹配",
+      "instructions": "輸入正規表達式和測試文字。匹配結果即時高亮顯示。根據需要切換標誌位。"
+    },
+    "qrcode": {
+      "text_label": "文字 / URL",
+      "text_placeholder": "輸入要編碼的文字或 URL...",
+      "size_label": "大小 (px)",
+      "fg_color": "前景色",
+      "bg_color": "背景色",
+      "coming_soon": "QR Code 產生需要額外函式庫支援，即將推出！",
+      "instructions": "輸入文字或 URL 以產生 QR Code。可自訂大小和顏色。"
     }
   },
   "categories": {
@@ -42,6 +164,10 @@
     "color": "顏色",
     "network": "網路",
     "math": "數學",
+    "converter": "格式轉換",
+    "formatter": "程式碼格式化",
+    "image": "圖片處理",
+    "css": "前端工具",
     "misc": "其他"
   },
   "errors": {

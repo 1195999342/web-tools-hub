@@ -27,12 +27,134 @@
       "instructions": "在输入区域粘贴 JSON 文本，点击格式化按钮进行美化。",
       "copy_result": "复制结果"
     },
+    "base64": {
+      "encode_tab": "编码",
+      "decode_tab": "解码",
+      "input_placeholder": "输入要编码的文本或要解码的 Base64 字符串...",
+      "encode_button": "编码",
+      "decode_button": "解码",
+      "url_safe_label": "URL 安全模式",
+      "error_invalid_base64": "无效的 Base64 输入",
+      "instructions": "输入文本并点击编码将其转换为 Base64，或粘贴 Base64 字符串并点击解码还原。开启 URL 安全模式可生成 URL 兼容的编码。"
+    },
     "word-counter": {
       "input_placeholder": "在此输入或粘贴文本...",
       "chars": "字符数",
       "words": "单词数",
       "lines": "行数",
       "instructions": "输入或粘贴文本以查看实时统计数据。"
+    },
+    "url-encoder": {
+      "encode_tab": "编码",
+      "decode_tab": "解码",
+      "input_placeholder": "输入要编码的文本或要解码的编码字符串...",
+      "encode_button": "编码",
+      "decode_button": "解码",
+      "mode_label": "编码模式",
+      "error_invalid": "无效的解码输入",
+      "instructions": "输入文本并点击编码进行 URL 编码，或粘贴编码字符串并点击解码。可选择 encodeURIComponent 和 encodeURI 模式。"
+    },
+    "timestamp": {
+      "current_ts": "当前 Unix 时间戳",
+      "seconds": "秒",
+      "milliseconds": "毫秒",
+      "unit_label": "单位",
+      "timezone_label": "时区",
+      "ts_to_date": "时间戳 → 日期",
+      "date_to_ts": "日期 → 时间戳",
+      "ts_placeholder": "输入 Unix 时间戳...",
+      "convert_button": "转换",
+      "error_invalid_ts": "无效的时间戳",
+      "error_invalid_date": "无效的日期",
+      "instructions": "在 Unix 时间戳和可读日期之间互转。当前时间戳实时更新。"
+    },
+    "json-minify": {
+      "input_placeholder": "在此粘贴 JSON...",
+      "minify_button": "压缩",
+      "escape_button": "转义",
+      "unescape_button": "反转义",
+      "error_invalid_json": "无效的 JSON 输入",
+      "instructions": "粘贴 JSON 并点击压缩来压缩，转义来转义特殊字符，或反转义来还原。"
+    },
+    "uuid-generator": {
+      "quantity_label": "数量",
+      "format_label": "格式",
+      "format_standard": "标准格式",
+      "format_no_dash": "无连字符",
+      "format_uppercase": "大写",
+      "format_lowercase": "小写",
+      "generate_button": "生成",
+      "instructions": "生成 UUID v4 标识符。选择数量和格式，然后点击生成。"
+    },
+    "hash-calculator": {
+      "input_placeholder": "输入要计算哈希的文本...",
+      "uppercase_label": "大写",
+      "instructions": "输入文本并选择哈希算法。结果实时更新。"
+    },
+    "color-converter": {
+      "color_label": "颜色",
+      "instructions": "选择颜色或输入 HEX 值以查看所有格式转换。"
+    },
+    "radix-converter": {
+      "input_label": "输入",
+      "input_placeholder": "输入一个数字...",
+      "source_radix": "源进制",
+      "binary": "二进制 (2)",
+      "octal": "八进制 (8)",
+      "decimal": "十进制 (10)",
+      "hex": "十六进制 (16)",
+      "error_invalid": "输入对所选进制无效",
+      "instructions": "输入数字并选择其进制。四种进制转换结果同时显示。"
+    },
+    "case-converter": {
+      "input_placeholder": "输入要转换的文本...",
+      "mode_upper": "全大写",
+      "mode_lower": "全小写",
+      "mode_title": "标题大写",
+      "mode_sentence": "句首大写",
+      "mode_toggle": "大小写互换",
+      "instructions": "输入文本并选择转换模式。结果实时更新。"
+    },
+    "password-generator": {
+      "length_label": "长度",
+      "uppercase": "大写字母 (A-Z)",
+      "lowercase": "小写字母 (a-z)",
+      "digits": "数字 (0-9)",
+      "symbols": "符号 (!@#...)",
+      "count_label": "数量",
+      "generate_button": "生成",
+      "strength": "强度",
+      "strength_weak": "弱",
+      "strength_fair": "一般",
+      "strength_good": "良好",
+      "strength_strong": "强",
+      "instructions": "配置密码选项并点击生成。使用强度指示器评估安全性。"
+    },
+    "json-sort": {
+      "input_placeholder": "在此粘贴 JSON...",
+      "order_label": "排序方式",
+      "order_asc": "升序 (A→Z)",
+      "order_desc": "降序 (Z→A)",
+      "sort_button": "排序",
+      "error_invalid_json": "无效的 JSON 输入",
+      "instructions": "粘贴 JSON 对象并点击排序以按字母顺序排列键。数组顺序保持不变。"
+    },
+    "regex-tester": {
+      "pattern_label": "正则表达式",
+      "pattern_placeholder": "输入正则表达式...",
+      "text_label": "测试文本",
+      "text_placeholder": "输入要测试的文本...",
+      "match_count": "找到 {count} 个匹配",
+      "instructions": "输入正则表达式和测试文本。匹配结果实时高亮显示。根据需要切换标志位。"
+    },
+    "qrcode": {
+      "text_label": "文本 / URL",
+      "text_placeholder": "输入要编码的文本或 URL...",
+      "size_label": "大小 (px)",
+      "fg_color": "前景色",
+      "bg_color": "背景色",
+      "coming_soon": "二维码生成需要额外库支持，即将推出！",
+      "instructions": "输入文本或 URL 以生成二维码。可自定义大小和颜色。"
     }
   },
   "categories": {
@@ -42,6 +164,10 @@
     "color": "颜色",
     "network": "网络",
     "math": "数学",
+    "converter": "格式转换",
+    "formatter": "代码格式化",
+    "image": "图片处理",
+    "css": "前端工具",
     "misc": "其他"
   },
   "errors": {

@@ -27,12 +27,134 @@
       "instructions": "入力エリアにJSONテキストを貼り付け、フォーマットボタンをクリックして整形してください。",
       "copy_result": "結果をコピー"
     },
+    "base64": {
+      "encode_tab": "エンコード",
+      "decode_tab": "デコード",
+      "input_placeholder": "エンコードするテキストまたはデコードするBase64文字列を入力...",
+      "encode_button": "エンコード",
+      "decode_button": "デコード",
+      "url_safe_label": "URLセーフ",
+      "error_invalid_base64": "無効なBase64入力",
+      "instructions": "テキストを入力してエンコードをクリックするとBase64に変換されます。Base64文字列を貼り付けてデコードをクリックすると元に戻ります。URLセーフモードをオンにするとURL互換のエンコードが生成されます。"
+    },
     "word-counter": {
       "input_placeholder": "テキストを入力または貼り付け...",
       "chars": "文字数",
       "words": "単語数",
       "lines": "行数",
       "instructions": "テキストを入力または貼り付けてリアルタイム統計を確認してください。"
+    },
+    "url-encoder": {
+      "encode_tab": "エンコード",
+      "decode_tab": "デコード",
+      "input_placeholder": "エンコードするテキストまたはデコードする文字列を入力...",
+      "encode_button": "エンコード",
+      "decode_button": "デコード",
+      "mode_label": "エンコードモード",
+      "error_invalid": "無効なデコード入力",
+      "instructions": "テキストを入力してエンコードをクリックするとURLエンコードされます。エンコード文字列を貼り付けてデコードをクリックすると元に戻ります。encodeURIComponentとencodeURIモードを選択できます。"
+    },
+    "timestamp": {
+      "current_ts": "現在のUnixタイムスタンプ",
+      "seconds": "秒",
+      "milliseconds": "ミリ秒",
+      "unit_label": "単位",
+      "timezone_label": "タイムゾーン",
+      "ts_to_date": "タイムスタンプ → 日付",
+      "date_to_ts": "日付 → タイムスタンプ",
+      "ts_placeholder": "Unixタイムスタンプを入力...",
+      "convert_button": "変換",
+      "error_invalid_ts": "無効なタイムスタンプ",
+      "error_invalid_date": "無効な日付",
+      "instructions": "Unixタイムスタンプと日付を相互変換します。現在のタイムスタンプはリアルタイムで更新されます。"
+    },
+    "json-minify": {
+      "input_placeholder": "JSONをここに貼り付け...",
+      "minify_button": "圧縮",
+      "escape_button": "エスケープ",
+      "unescape_button": "アンエスケープ",
+      "error_invalid_json": "無効なJSON入力",
+      "instructions": "JSONを貼り付けて圧縮をクリックして圧縮、エスケープで特殊文字をエスケープ、アンエスケープで元に戻します。"
+    },
+    "uuid-generator": {
+      "quantity_label": "数量",
+      "format_label": "フォーマット",
+      "format_standard": "標準",
+      "format_no_dash": "ハイフンなし",
+      "format_uppercase": "大文字",
+      "format_lowercase": "小文字",
+      "generate_button": "生成",
+      "instructions": "UUID v4識別子を生成します。数量とフォーマットを選択して生成をクリックしてください。"
+    },
+    "hash-calculator": {
+      "input_placeholder": "ハッシュ化するテキストを入力...",
+      "uppercase_label": "大文字",
+      "instructions": "テキストを入力してハッシュアルゴリズムを選択してください。結果はリアルタイムで更新されます。"
+    },
+    "color-converter": {
+      "color_label": "カラー",
+      "instructions": "カラーを選択するかHEX値を入力して、すべてのフォーマット変換を確認してください。"
+    },
+    "radix-converter": {
+      "input_label": "入力",
+      "input_placeholder": "数値を入力...",
+      "source_radix": "元の基数",
+      "binary": "2進数 (2)",
+      "octal": "8進数 (8)",
+      "decimal": "10進数 (10)",
+      "hex": "16進数 (16)",
+      "error_invalid": "選択した基数に対して無効な入力",
+      "instructions": "数値を入力して基数を選択してください。4つの基数変換結果が同時に表示されます。"
+    },
+    "case-converter": {
+      "input_placeholder": "変換するテキストを入力...",
+      "mode_upper": "大文字",
+      "mode_lower": "小文字",
+      "mode_title": "タイトルケース",
+      "mode_sentence": "文頭大文字",
+      "mode_toggle": "大小文字切替",
+      "instructions": "テキストを入力して変換モードを選択してください。結果はリアルタイムで更新されます。"
+    },
+    "password-generator": {
+      "length_label": "長さ",
+      "uppercase": "大文字 (A-Z)",
+      "lowercase": "小文字 (a-z)",
+      "digits": "数字 (0-9)",
+      "symbols": "記号 (!@#...)",
+      "count_label": "数量",
+      "generate_button": "生成",
+      "strength": "強度",
+      "strength_weak": "弱い",
+      "strength_fair": "普通",
+      "strength_good": "良い",
+      "strength_strong": "強い",
+      "instructions": "パスワードオプションを設定して生成をクリックしてください。強度インジケーターでセキュリティを評価できます。"
+    },
+    "json-sort": {
+      "input_placeholder": "JSONをここに貼り付け...",
+      "order_label": "ソート順",
+      "order_asc": "昇順 (A→Z)",
+      "order_desc": "降順 (Z→A)",
+      "sort_button": "ソート",
+      "error_invalid_json": "無効なJSON入力",
+      "instructions": "JSONオブジェクトを貼り付けてソートをクリックすると、キーがアルファベット順に並べ替えられます。配列の順序は保持されます。"
+    },
+    "regex-tester": {
+      "pattern_label": "正規表現",
+      "pattern_placeholder": "正規表現パターンを入力...",
+      "text_label": "テストテキスト",
+      "text_placeholder": "テストするテキストを入力...",
+      "match_count": "{count}件のマッチが見つかりました",
+      "instructions": "正規表現パターンとテストテキストを入力してください。マッチはリアルタイムでハイライトされます。必要に応じてフラグを切り替えてください。"
+    },
+    "qrcode": {
+      "text_label": "テキスト / URL",
+      "text_placeholder": "エンコードするテキストまたはURLを入力...",
+      "size_label": "サイズ (px)",
+      "fg_color": "前景色",
+      "bg_color": "背景色",
+      "coming_soon": "QRコード生成にはライブラリが必要です。近日公開！",
+      "instructions": "テキストまたはURLを入力してQRコードを生成します。サイズと色をカスタマイズできます。"
     }
   },
   "categories": {
@@ -42,6 +164,10 @@
     "color": "カラー",
     "network": "ネットワーク",
     "math": "数学",
+    "converter": "フォーマット変換",
+    "formatter": "コードフォーマッター",
+    "image": "画像ツール",
+    "css": "CSSツール",
     "misc": "その他"
   },
   "errors": {
