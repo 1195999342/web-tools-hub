@@ -353,6 +353,265 @@
       "serialize_button": "Serialize",
       "unserialize_button": "Unserialize",
       "instructions": "Convert JSON to PHP serialized format or unserialize PHP data back to JSON."
+    },
+    "css-gradient": {
+      "instructions": "Create CSS gradients with visual controls. Adjust type, angle, and color stops.",
+      "type_label": "Type",
+      "linear": "Linear",
+      "radial": "Radial",
+      "angle_label": "Angle",
+      "shape_label": "Shape",
+      "position": "Stop"
+    },
+    "css-bezier": {
+      "instructions": "Edit cubic-bezier curves for CSS animations. Use presets or drag sliders.",
+      "duration_label": "Duration (ms)",
+      "preview_button": "Preview Animation"
+    },
+    "css-flex": {
+      "instructions": "Edit Flexbox layout properties visually. See live preview of the layout.",
+      "direction_label": "Direction",
+      "justify_label": "Justify Content",
+      "align_label": "Align Items",
+      "wrap_label": "Flex Wrap",
+      "gap_label": "Gap (px)"
+    },
+    "css-glassmorphism": {
+      "instructions": "Create glassmorphism effects. Adjust blur, opacity, and background color.",
+      "blur_label": "Blur",
+      "opacity_label": "Opacity",
+      "radius_label": "Border Radius",
+      "color_label": "Background Color",
+      "preview_text": "Glassmorphism"
+    },
+    "css-neumorphism": {
+      "instructions": "Create neumorphism effects. Adjust shadow distance, blur, intensity, and shape.",
+      "distance_label": "Distance",
+      "blur_label": "Blur",
+      "intensity_label": "Intensity",
+      "shape_label": "Shape",
+      "color_label": "Background Color"
+    },
+    "css-border-radius": {
+      "instructions": "Edit CSS border-radius with independent corner controls.",
+      "linked_label": "Link Corners",
+      "top_left": "Top Left",
+      "top_right": "Top Right",
+      "bottom_left": "Bottom Left",
+      "bottom_right": "Bottom Right"
+    },
+    "px-converter": {
+      "instructions": "Convert between CSS units. Set a custom base font size for em/rem calculations.",
+      "value_label": "Value",
+      "unit_label": "Unit",
+      "base_font_label": "Base Font Size (px)"
+    },
+    "gradient-collection": {
+      "instructions": "Browse 100+ preset gradients. Click to select and copy the CSS."
+    },
+    "color-palette": {
+      "instructions": "Pick a base color and select a harmony rule to generate a color palette.",
+      "color_label": "Base Color",
+      "rule_label": "Harmony Rule",
+      "rule_complementary": "Complementary",
+      "rule_analogous": "Analogous",
+      "rule_triadic": "Triadic",
+      "rule_split-complementary": "Split Complementary",
+      "rule_tetradic": "Tetradic",
+      "rule_monochromatic": "Monochromatic"
+    },
+    "traditional-colors": {
+      "instructions": "Browse Chinese and Japanese traditional colors. Click a color to see details.",
+      "chinese_tab": "Chinese",
+      "japanese_tab": "Japanese"
+    },
+    "image-crop": {
+      "instructions": "Upload an image and set crop dimensions to crop it.",
+      "drop_label": "Drop an image here or click to browse",
+      "width_label": "Width",
+      "height_label": "Height",
+      "crop_button": "Crop"
+    },
+    "image-compress": {
+      "instructions": "Upload an image and adjust quality to compress it.",
+      "drop_label": "Drop an image here or click to browse",
+      "quality_label": "Quality",
+      "compress_button": "Compress",
+      "original_size": "Original"
+    },
+    "image-converter": {
+      "instructions": "Upload an image and select a target format to convert and download.",
+      "drop_label": "Drop an image here or click to browse",
+      "format_label": "Target Format",
+      "convert_button": "Convert & Download"
+    },
+    "image-resize": {
+      "instructions": "Upload an image and set new dimensions to resize it.",
+      "drop_label": "Drop an image here or click to browse",
+      "width_label": "Width",
+      "height_label": "Height",
+      "lock_aspect": "Lock Aspect Ratio",
+      "resize_button": "Resize"
+    },
+    "curl-converter": {
+      "instructions": "Paste a curl command and select a target language to generate code.",
+      "input_placeholder": "Paste curl command here...",
+      "language_label": "Target Language",
+      "convert_button": "Convert",
+      "error_invalid": "Invalid curl command"
+    },
+    "url-parser": {
+      "instructions": "Enter a URL to parse it into its components.",
+      "url_label": "URL",
+      "params_label": "Query Parameters",
+      "error_invalid": "Invalid URL"
+    },
+    "browser-info": {
+      "instructions": "View your browser and device information detected automatically."
+    },
+    "meta-generator": {
+      "instructions": "Fill in the fields to generate HTML meta tags for SEO.",
+      "title_label": "Title",
+      "description_label": "Description",
+      "keywords_label": "Keywords",
+      "author_label": "Author"
+    },
+    "htaccess-nginx": {
+      "instructions": "Paste Apache .htaccess rules to convert them to Nginx configuration.",
+      "input_label": ".htaccess",
+      "input_placeholder": "Paste .htaccess rules here...",
+      "convert_button": "Convert to Nginx"
+    },
+    "html-to-markdown": {
+      "instructions": "Paste HTML and convert it to Markdown format.",
+      "input_placeholder": "Paste HTML here...",
+      "convert_button": "Convert to Markdown"
+    },
+    "pinyin": {
+      "instructions": "Enter Chinese characters to convert them to pinyin.",
+      "input_placeholder": "Enter Chinese characters...",
+      "mode_label": "Tone Mode",
+      "mode_marks": "Tone Marks",
+      "mode_numbers": "Tone Numbers",
+      "mode_none": "No Tones"
+    },
+    "simplified-traditional": {
+      "instructions": "Convert between Simplified and Traditional Chinese characters.",
+      "s2t_tab": "Simplified → Traditional",
+      "t2s_tab": "Traditional → Simplified",
+      "input_placeholder": "Enter Chinese text...",
+      "convert_button": "Convert"
+    },
+    "number-to-chinese": {
+      "instructions": "Enter a number to convert it to Chinese characters.",
+      "input_label": "Number",
+      "input_placeholder": "Enter a number...",
+      "normal_label": "Chinese",
+      "upper_label": "Uppercase Amount (大写金额)"
+    },
+    "image-base64": {
+      "instructions": "Upload an image to get its Base64 and Data URI.",
+      "drop_label": "Drop an image here or click to browse"
+    },
+    "csv-to-json": {
+      "instructions": "Paste CSV data and convert it to JSON format.",
+      "input_placeholder": "Paste CSV data here...",
+      "delimiter_label": "Delimiter",
+      "convert_button": "Convert to JSON"
+    },
+    "time-converter": {
+      "instructions": "Enter a date/time string to see it in multiple formats.",
+      "input_label": "Date/Time",
+      "timezone_label": "Timezone"
+    },
+    "image-to-pdf": {
+      "instructions": "Convert images to PDF.",
+      "coming_soon": "Coming Soon",
+      "requires_library": "This feature requires the jspdf library."
+    },
+    "pdf-to-image": {
+      "instructions": "Convert PDF pages to images.",
+      "coming_soon": "Coming Soon",
+      "requires_library": "This feature requires the pdf.js library."
+    },
+    "image-to-svg": {
+      "instructions": "Trace bitmap images to SVG.",
+      "coming_soon": "Coming Soon",
+      "requires_library": "This feature requires the potrace library."
+    },
+    "html-strip": {
+      "instructions": "Paste HTML and strip all tags to get plain text.",
+      "input_placeholder": "Paste HTML here...",
+      "strip_button": "Strip Tags"
+    },
+    "auto-typeset": {
+      "instructions": "Paste text to automatically add spaces between CJK and Latin characters.",
+      "input_placeholder": "Paste text here...",
+      "format_button": "Auto Typeset"
+    },
+    "text-filter": {
+      "instructions": "Paste text and toggle which character types to keep.",
+      "input_placeholder": "Paste text here...",
+      "keep_chinese": "Chinese",
+      "keep_english": "English",
+      "keep_digits": "Digits",
+      "keep_punctuation": "Punctuation",
+      "keep_spaces": "Spaces"
+    },
+    "python-formatter": {
+      "instructions": "Paste Python code to format its indentation.",
+      "input_placeholder": "Paste Python code here...",
+      "format_button": "Format"
+    },
+    "java-formatter": {
+      "instructions": "Paste Java code to format its indentation.",
+      "input_placeholder": "Paste Java code here...",
+      "format_button": "Format"
+    },
+    "php-formatter": {
+      "instructions": "Paste PHP code to format its indentation.",
+      "input_placeholder": "Paste PHP code here...",
+      "format_button": "Format"
+    },
+    "subnet-calculator": {
+      "instructions": "View the CIDR to subnet mask conversion table.",
+      "mask": "Subnet Mask",
+      "wildcard": "Wildcard",
+      "hosts": "Hosts",
+      "class": "Class"
+    },
+    "color-schemes": {
+      "instructions": "Browse 50+ preset color schemes for web design. Click to select."
+    },
+    "barcode": {
+      "instructions": "Enter text to generate a Code128 barcode.",
+      "text_label": "Text",
+      "text_placeholder": "Enter text for barcode..."
+    },
+    "chart-generator": {
+      "instructions": "Enter data as label,value pairs (one per line) to generate a chart.",
+      "input_placeholder": "Apple,30\nBanana,20\nCherry,50",
+      "type_label": "Chart Type",
+      "bar": "Bar",
+      "pie": "Pie",
+      "line": "Line",
+      "draw_button": "Draw"
+    },
+    "keycode": {
+      "instructions": "Press any key to see its event properties in real-time.",
+      "press_key": "Press any key..."
+    },
+    "shield-badge": {
+      "instructions": "Configure and generate GitHub-style shield badges.",
+      "label_field": "Label",
+      "message_field": "Message",
+      "color_label": "Color",
+      "style_label": "Style"
+    },
+    "gif-maker": {
+      "instructions": "Create GIF from multiple images.",
+      "coming_soon": "Coming Soon",
+      "requires_library": "This feature requires the gif.js library."
     }
   },
   "categories": {

@@ -291,7 +291,7 @@
   - 运行 `scripts/check-cf-limits.ts` 确认文件数量在 CF Pages 限制内
 
 - [ ] 7. P2 批次：扩展工具实现（50 个工具）
-  - [ ] 7.1 CSS 工具组（7 个）
+  - [x] 7.1 CSS 工具组（7 个）
     - 实现 CSS 渐变生成器（`tools/css-gradient/`）：线性/径向渐变，可视化编辑器
     - 实现 CSS 贝塞尔曲线编辑器（`tools/css-bezier/`）：拖拽控制点，预设曲线，动画预览
     - 实现 CSS Flex 布局编辑器（`tools/css-flex/`）：可视化 Flex 属性编辑
@@ -302,14 +302,14 @@
     - 每个工具：创建 logic.ts + index.tsx，注册到 registry，添加翻译
     - _Requirements: 90.1-90.6, 89.1-89.5, 95.1-95.5, 96.1-96.4, 97.1-97.4, 94.1-94.5, 64.1-64.3_
 
-  - [ ] 7.2 颜色工具组（3 个）
+  - [x] 7.2 颜色工具组（3 个）
     - 实现渐变色集合（`tools/gradient-collection/`）：100+ 精选渐变色方案，按色系筛选
     - 实现配色工具（`tools/color-palette/`）：互补色/类似色/三角色等配色规则
     - 实现中国/日本传统色彩（`tools/traditional-colors/`）：各 100+ 种传统色彩，色卡展示
     - 每个工具：创建 logic.ts + index.tsx，注册到 registry，添加翻译
     - _Requirements: 91.1-91.5, 92.1-92.5, 93.1-93.5_
 
-  - [ ] 7.3 图片处理工具组（4 个）
+  - [x] 7.3 图片处理工具组（4 个）
     - 实现图片裁剪（`tools/image-crop/`）：Canvas API，自由/固定比例裁剪
     - 实现图片压缩（`tools/image-compress/`）：Canvas API，质量调整，批量压缩
     - 实现图片格式转换（`tools/image-converter/`）：JPG/PNG/WebP/GIF/BMP 互转
@@ -317,7 +317,7 @@
     - 每个工具：创建 logic.ts + index.tsx，注册到 registry，添加翻译
     - _Requirements: 104.1-104.6, 111.1-111.6, 65.1-65.6, 106.1-106.5_
 
-  - [ ] 7.4 网络工具组（5 个）
+  - [x] 7.4 网络工具组（5 个）
     - 实现 curl 转代码（`tools/curl-converter/`）：转 JS/Python/Go/Java/PHP/Node.js
     - 实现 URL 地址解析（`tools/url-parser/`）：解析 URL 各部分，支持编辑重组
     - 实现浏览器信息检测（`tools/browser-info/`）：检测浏览器/OS/屏幕/API 支持
@@ -326,7 +326,7 @@
     - 每个工具：创建 logic.ts + index.tsx，注册到 registry，添加翻译
     - _Requirements: 87.1-87.5, 81.1-81.4, 86.1-86.3, 149.1-149.4, 183.1-183.4_
 
-  - [ ] 7.5 转换工具组（10 个）
+  - [x] 7.5 转换工具组（10 个）
     - 实现 HTML 转 Markdown（`tools/html-to-markdown/`）：常见 HTML 元素转 Markdown
     - 实现汉字转拼音（`tools/pinyin/`）：带声调/不带声调/数字声调，多音字
     - 实现简繁体互转（`tools/simplified-traditional/`）：内置简繁对照表
@@ -340,7 +340,7 @@
     - 每个工具：创建 logic.ts + index.tsx，注册到 registry，添加翻译
     - _Requirements: 59.1-59.4, 60.1-60.4, 62.1-62.3, 57.1-57.4, 39.1-39.5, 24.1-24.5, 172.1-172.4, 194.1-194.4, 195.1-195.3, 188.1-188.5_
 
-  - [ ] 7.6 文字处理与格式化工具组（8 个）
+  - [x] 7.6 文字处理与格式化工具组（8 个）
     - 实现去除 HTML 格式（`tools/html-strip/`）：去除标签保留文本结构
     - 实现在线自动排版工具（`tools/auto-typeset/`）：中英文空格、标点修正
     - 实现文本中英文数字清除（`tools/text-filter/`）：选择性保留/清除中文/英文/数字
@@ -352,7 +352,7 @@
     - 每个工具：创建 logic.ts + index.tsx，注册到 registry，添加翻译
     - _Requirements: 150.1-150.4, 161.1-161.4, 203.1-203.4, 178.1-178.3, 179.1-179.3, 180.1-180.2, 185.1-185.3, 158.1-158.5_
 
-  - [ ] 7.7 其他 P2 工具组（9 个）
+  - [x] 7.7 其他 P2 工具组（9 个）
     - 实现条形码生成器（`tools/barcode/`）：Code 128/39/EAN-13 等格式
     - 实现图表生成器（`tools/chart-generator/`）：饼图/柱状图/折线图/散点图/雷达图
     - 实现键盘按键值查询（`tools/keycode/`）：实时显示 key/keyCode/code
