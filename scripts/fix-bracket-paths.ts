@@ -87,7 +87,7 @@ function updateFileReferences(dir: string, replacements: Array<[string, string]>
     const full = path.join(dir, entry.name);
     if (entry.isDirectory()) {
       count += updateFileReferences(full, replacements);
-    } else if (/\.(html|js|css|json)$/.test(entry.name)) {
+    } else if (/\.(html|js|css|json|txt)$/.test(entry.name)) {
       let content = fs.readFileSync(full, 'utf-8');
       let changed = false;
       for (const [oldStr, newStr] of replacements) {
