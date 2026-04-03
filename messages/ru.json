@@ -612,6 +612,407 @@
       "instructions": "Create GIF from multiple images.",
       "coming_soon": "Coming Soon",
       "requires_library": "This feature requires the gif.js library."
+    },
+    "json-tree": {
+      "instructions": "Paste JSON and click Parse to view as a collapsible tree.",
+      "input_placeholder": "Paste JSON here...",
+      "parse_button": "Parse"
+    },
+    "json-random": {
+      "instructions": "Configure depth and fields, then generate random JSON.",
+      "depth_label": "Depth",
+      "fields_label": "Fields",
+      "generate_button": "Generate"
+    },
+    "json-cleaner": {
+      "instructions": "Paste dirty JSON to remove comments, trailing commas, and fix quotes.",
+      "input_placeholder": "Paste JSON with comments or trailing commas...",
+      "clean_button": "Clean"
+    },
+    "json-querystring": {
+      "instructions": "Convert between JSON objects and URL query strings.",
+      "json_to_qs": "JSON → Query String",
+      "qs_to_json": "Query String → JSON",
+      "input_placeholder": "Paste JSON or query string...",
+      "convert_button": "Convert"
+    },
+    "json-highlight": {
+      "instructions": "Paste JSON to see syntax-highlighted output.",
+      "input_placeholder": "Paste JSON here...",
+      "highlight_button": "Highlight"
+    },
+    "json-editor": {
+      "instructions": "Edit JSON with format, minify, and validate features.",
+      "input_placeholder": "Edit JSON here...",
+      "format_button": "Format",
+      "minify_button": "Minify",
+      "validate_button": "Validate"
+    },
+    "escape-encoder": {
+      "instructions": "Escape or unescape JavaScript strings.",
+      "escape_tab": "Escape",
+      "unescape_tab": "Unescape",
+      "input_placeholder": "Enter text..."
+    },
+    "base32-encoder": {
+      "instructions": "Encode and decode text using Base32, Base58, or Base62.",
+      "encode_tab": "Encode",
+      "decode_tab": "Decode",
+      "algo_label": "Algorithm",
+      "input_placeholder": "Enter text..."
+    },
+    "bcrypt-tool": {
+      "instructions": "Generate bcrypt hashes or verify passwords against hashes.",
+      "generate_label": "Generate Hash",
+      "verify_label": "Verify Hash",
+      "password_label": "Password",
+      "rounds_label": "Rounds",
+      "generate_button": "Generate",
+      "hash_label": "Hash",
+      "verify_button": "Verify"
+    },
+    "morse-code": {
+      "instructions": "Convert between text and Morse code.",
+      "text_to_morse": "Text → Morse",
+      "morse_to_text": "Morse → Text",
+      "input_placeholder": "Enter text or Morse code...",
+      "convert_button": "Convert"
+    },
+    "gzip-tool": {
+      "instructions": "Compress text with Gzip or decompress Base64-encoded Gzip data.",
+      "compress_tab": "Compress",
+      "decompress_tab": "Decompress",
+      "input_placeholder": "Enter text or Base64 gzip data..."
+    },
+    "htpasswd-gen": {
+      "instructions": "Generate htpasswd entries for Apache authentication.",
+      "username_label": "Username",
+      "password_label": "Password",
+      "generate_button": "Generate"
+    },
+    "file-hash": {
+      "instructions": "Upload a file to calculate its SHA hashes.",
+      "drop_label": "Drop a file here or click to browse"
+    },
+    "native-ascii": {
+      "instructions": "Convert between native characters and \\uXXXX ASCII.",
+      "to_ascii": "Native → ASCII",
+      "to_native": "ASCII → Native",
+      "input_placeholder": "Enter text...",
+      "convert_button": "Convert"
+    },
+    "rsa-tool": {
+      "instructions": "Generate RSA key pairs and encrypt/decrypt text.",
+      "generate_button": "Generate Key Pair",
+      "public_key": "Public Key",
+      "private_key": "Private Key",
+      "plaintext_label": "Plaintext",
+      "ciphertext_label": "Ciphertext",
+      "encrypt_button": "Encrypt",
+      "decrypt_button": "Decrypt"
+    },
+    "hex-url": {
+      "instructions": "Encode text to URL hex format or decode back.",
+      "encode_tab": "Encode",
+      "decode_tab": "Decode",
+      "input_placeholder": "Enter text..."
+    },
+    "utf8-tool": {
+      "instructions": "View UTF-8 byte sequences of text.",
+      "text_to_bytes": "Text → Bytes",
+      "bytes_to_text": "Bytes → Text",
+      "input_placeholder": "Enter text or hex bytes...",
+      "convert_button": "Convert"
+    },
+    "email-encode": {
+      "instructions": "Encode email addresses to prevent scraping.",
+      "email_label": "Email Address"
+    },
+    "cert-gen": {
+      "instructions": "Self-signed certificate generator.",
+      "coming_soon": "Coming Soon",
+      "requires_library": "This feature requires a crypto library."
+    },
+    "js-obfuscate": {
+      "instructions": "Basic JavaScript variable name obfuscation.",
+      "input_placeholder": "Paste JavaScript code...",
+      "obfuscate_button": "Obfuscate"
+    },
+    "scrypt-tool": {
+      "instructions": "Scrypt hash tool.",
+      "coming_soon": "Coming Soon",
+      "requires_library": "This feature requires a scrypt library."
+    },
+    "cookie-formatter": {
+      "instructions": "Parse cookie strings into a key-value table.",
+      "input_placeholder": "Paste cookie string...",
+      "parse_button": "Parse"
+    },
+    "header-formatter": {
+      "instructions": "Parse HTTP headers into a key-value table.",
+      "input_placeholder": "Paste HTTP headers...",
+      "parse_button": "Parse"
+    },
+    "url-params": {
+      "instructions": "Parse URL query parameters into an editable table.",
+      "input_placeholder": "Paste URL or query string...",
+      "parse_button": "Parse"
+    },
+    "c-formatter": {
+      "instructions": "Basic C/C# code formatting with indentation.",
+      "input_placeholder": "Paste C/C# code...",
+      "format_button": "Format"
+    },
+    "ruby-formatter": {
+      "instructions": "Basic Ruby/Perl code formatting.",
+      "input_placeholder": "Paste Ruby code...",
+      "format_button": "Format"
+    },
+    "sql-quotes": {
+      "instructions": "Add or remove double quotes around SQL identifiers.",
+      "input_placeholder": "Paste SQL...",
+      "add_button": "Add Quotes",
+      "remove_button": "Remove Quotes"
+    },
+    "hex-text": {
+      "instructions": "Convert between hex strings and text.",
+      "text_to_hex": "Text → Hex",
+      "hex_to_text": "Hex → Text",
+      "input_placeholder": "Enter text or hex...",
+      "convert_button": "Convert"
+    },
+    "fullwidth-halfwidth": {
+      "instructions": "Convert between fullwidth and halfwidth characters.",
+      "to_fullwidth": "→ Fullwidth",
+      "to_halfwidth": "→ Halfwidth",
+      "input_placeholder": "Enter text...",
+      "convert_button": "Convert"
+    },
+    "geo-coords": {
+      "instructions": "Convert between WGS-84, GCJ-02, and BD-09 coordinates.",
+      "lng_label": "Longitude",
+      "lat_label": "Latitude",
+      "mode_label": "Conversion",
+      "convert_button": "Convert"
+    },
+    "dms-converter": {
+      "instructions": "Convert between decimal degrees and DMS format.",
+      "decimal_to_dms": "Decimal → DMS",
+      "dms_to_decimal": "DMS → Decimal",
+      "input_placeholder": "Enter value...",
+      "convert_button": "Convert"
+    },
+    "short-url": {
+      "instructions": "Simulate short URL encoding using Base62.",
+      "url_label": "URL",
+      "shorten_button": "Shorten"
+    },
+    "html-ubb": {
+      "instructions": "Convert between HTML and BBCode/UBB format.",
+      "html_to_ubb": "HTML → BBCode",
+      "ubb_to_html": "BBCode → HTML",
+      "input_placeholder": "Paste HTML or BBCode...",
+      "convert_button": "Convert"
+    },
+    "doc-to-pdf": {
+      "instructions": "Document to PDF conversion.",
+      "coming_soon": "Coming Soon",
+      "requires_library": "This feature requires a PDF library."
+    },
+    "si-units": {
+      "instructions": "Convert between SI units for force, energy, frequency, and pressure.",
+      "category_label": "Category",
+      "value_label": "Value",
+      "from_label": "From"
+    },
+    "ip-to-int": {
+      "instructions": "Convert between IPv4 addresses and integers.",
+      "ip_to_int": "IP → Integer",
+      "int_to_ip": "Integer → IP",
+      "input_placeholder": "Enter IP or integer...",
+      "convert_button": "Convert"
+    },
+    "matrix-json": {
+      "instructions": "Convert between matrix text and JSON 2D arrays.",
+      "matrix_to_json": "Matrix → JSON",
+      "json_to_matrix": "JSON → Matrix",
+      "input_placeholder": "Enter matrix or JSON...",
+      "convert_button": "Convert"
+    },
+    "cookie-to-js": {
+      "instructions": "Convert cookie strings to JavaScript document.cookie code.",
+      "input_placeholder": "Paste cookie string...",
+      "convert_button": "Convert"
+    },
+    "richtext-markdown": {
+      "instructions": "Convert rich text HTML to Markdown format.",
+      "input_placeholder": "Paste HTML...",
+      "convert_button": "Convert"
+    },
+    "video-to-mp3": {
+      "instructions": "Video to audio extraction.",
+      "coming_soon": "Coming Soon",
+      "requires_library": "This feature requires FFmpeg."
+    },
+    "video-trim": {
+      "instructions": "Video trimming tool.",
+      "coming_soon": "Coming Soon",
+      "requires_library": "This feature requires FFmpeg."
+    },
+    "video-crop": {
+      "instructions": "Video crop tool.",
+      "coming_soon": "Coming Soon",
+      "requires_library": "This feature requires FFmpeg."
+    },
+    "pdf-compress": {
+      "instructions": "PDF compression tool.",
+      "coming_soon": "Coming Soon",
+      "requires_library": "This feature requires a PDF library."
+    },
+    "pdf-editor": {
+      "instructions": "PDF editor.",
+      "coming_soon": "Coming Soon",
+      "requires_library": "This feature requires a PDF library."
+    },
+    "php-session": {
+      "instructions": "Parse PHP session data into JSON.",
+      "input_placeholder": "Paste PHP session data...",
+      "parse_button": "Parse"
+    },
+    "currency-uppercase": {
+      "instructions": "Convert numbers to multi-currency uppercase format.",
+      "number_label": "Number"
+    },
+    "js-eval": {
+      "instructions": "JS eval encrypt and decrypt.",
+      "encode_tab": "Encrypt",
+      "decode_tab": "Decrypt",
+      "input_placeholder": "Paste JavaScript code..."
+    },
+    "thunder-url": {
+      "instructions": "Decode Thunder/FlashGet URLs or encode to Thunder format.",
+      "decode_tab": "Decode",
+      "encode_tab": "Encode",
+      "input_placeholder": "Paste Thunder/FlashGet URL..."
+    },
+    "torrent-magnet": {
+      "instructions": "Torrent to magnet link conversion.",
+      "coming_soon": "Coming Soon",
+      "requires_library": "This feature requires a torrent parser."
+    },
+    "html-js-convert": {
+      "instructions": "Convert between HTML and JavaScript string format.",
+      "html_to_js": "HTML → JS",
+      "js_to_html": "JS → HTML",
+      "input_placeholder": "Paste HTML or JS string...",
+      "convert_button": "Convert"
+    },
+    "lunar-calendar": {
+      "instructions": "Convert between Gregorian and Chinese Lunar calendar.",
+      "date_label": "Date",
+      "convert_button": "Convert"
+    },
+    "php-session-data": {
+      "instructions": "Parse and convert PHP session data.",
+      "input_placeholder": "Paste PHP session data...",
+      "parse_button": "Parse"
+    },
+    "text-reverse": {
+      "instructions": "Reverse text characters or line order.",
+      "input_placeholder": "Paste text...",
+      "reverse_text": "Reverse Text",
+      "reverse_lines": "Reverse Lines"
+    },
+    "text-find-replace": {
+      "instructions": "Find and replace text with optional regex support.",
+      "input_placeholder": "Paste text...",
+      "find_label": "Find",
+      "replace_label": "Replace",
+      "regex_label": "Regex",
+      "case_label": "Case Sensitive",
+      "replace_button": "Replace All"
+    },
+    "line-numbers": {
+      "instructions": "Add or remove line numbers from text.",
+      "input_placeholder": "Paste text...",
+      "add_button": "Add Numbers",
+      "remove_button": "Remove Numbers"
+    },
+    "string-count": {
+      "instructions": "Count occurrences of a string in text.",
+      "input_placeholder": "Paste text...",
+      "search_label": "Search String",
+      "case_label": "Case Sensitive",
+      "count_label": "Count"
+    },
+    "ascii-art": {
+      "instructions": "Generate ASCII art from text.",
+      "text_label": "Text",
+      "input_placeholder": "Enter text..."
+    },
+    "number-sum": {
+      "instructions": "Enter numbers (one per line) to calculate their sum.",
+      "input_placeholder": "Enter numbers, one per line...",
+      "sum_label": "Sum",
+      "count_label": "Count"
+    },
+    "text-shuffle": {
+      "instructions": "Randomly shuffle the order of lines.",
+      "input_placeholder": "Paste text lines...",
+      "shuffle_button": "Shuffle"
+    },
+    "sequence-gen": {
+      "instructions": "Generate a sequence of numbers with prefix/suffix.",
+      "start_label": "Start",
+      "end_label": "End",
+      "step_label": "Step",
+      "prefix_label": "Prefix",
+      "suffix_label": "Suffix",
+      "generate_button": "Generate"
+    },
+    "vertical-text": {
+      "instructions": "Convert horizontal text to vertical layout.",
+      "input_placeholder": "Paste text...",
+      "convert_button": "Convert"
+    },
+    "text-spacer": {
+      "instructions": "Insert a character between each character of the text.",
+      "input_placeholder": "Paste text...",
+      "spacer_label": "Spacer Character"
+    },
+    "random-chinese": {
+      "instructions": "Generate random Chinese characters.",
+      "count_label": "Count",
+      "generate_button": "Generate"
+    },
+    "text-column": {
+      "instructions": "Extract a specific column from delimited text.",
+      "input_placeholder": "Paste delimited text...",
+      "column_label": "Column #",
+      "delimiter_label": "Delimiter",
+      "extract_button": "Extract"
+    },
+    "text-length-filter": {
+      "instructions": "Filter text lines by character length.",
+      "input_placeholder": "Paste text...",
+      "min_label": "Min Length",
+      "max_label": "Max Length",
+      "filter_button": "Filter"
+    },
+    "hanzi-stroke": {
+      "instructions": "Look up stroke order for Chinese characters.",
+      "input_label": "Characters",
+      "input_placeholder": "Enter Chinese characters..."
+    },
+    "hanzi-stroke-count": {
+      "instructions": "Count strokes in Chinese characters.",
+      "input_placeholder": "Enter Chinese characters...",
+      "total_label": "Total Strokes"
+    },
+    "color-text": {
+      "instructions": "Generate colorful/rainbow text HTML.",
+      "text_label": "Text",
+      "input_placeholder": "Enter text..."
     }
   },
   "categories": {

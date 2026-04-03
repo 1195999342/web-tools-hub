@@ -12,6 +12,82 @@ export interface ToolMeta {
   description: Record<Locale, string>;
 }
 
+const ALL_LOCALES = ['en','zh-cn','zh-tw','ja','ko','es','fr','de','pt','ru'] as Locale[];
+function p3(slug: string, icon: string, category: ToolCategory, en: string, zhcn: string, den: string, dzhcn: string): ToolMeta {
+  return { slug, icon, category, enabled: true, supportedLocales: ALL_LOCALES, name: { en, 'zh-cn': zhcn, 'zh-tw': zhcn, ja: en, ko: en, es: en, fr: en, de: en, pt: en, ru: en }, description: { en: den, 'zh-cn': dzhcn, 'zh-tw': dzhcn, ja: den, ko: den, es: den, fr: den, de: den, pt: den, ru: den } };
+}
+
+const P3_TOOLS: ToolMeta[] = [
+  p3('json-tree','🌳','json','JSON Tree Viewer','JSON 树形查看器','Collapsible tree view of JSON data','可折叠的 JSON 树形视图'),
+  p3('json-random','🎲','json','JSON Random Generator','JSON 随机生成器','Generate random JSON data','生成随机 JSON 数据'),
+  p3('json-cleaner','🧹','json','JSON Cleaner','JSON 清理工具','Remove comments and trailing commas','移除注释和尾逗号'),
+  p3('json-querystring','🔗','json','JSON ↔ Query String','JSON 查询字符串互转','Convert between JSON and query strings','JSON 与查询字符串互转'),
+  p3('json-highlight','🎨','json','JSON Syntax Highlight','JSON 语法高亮','JSON syntax highlighting','JSON 语法着色高亮'),
+  p3('json-editor','✏️','json','JSON Editor','JSON 在线编辑器','Online JSON editor with validation','在线 JSON 编辑器'),
+  p3('escape-encoder','🔐','encoding','JS Escape/Unescape','JS 转义编码','JavaScript escape and unescape','JavaScript 转义/反转义'),
+  p3('base32-encoder','🔑','encoding','Base32/58/62 Encoder','Base32/58/62 编码','Base32, Base58, Base62 encode/decode','Base32/Base58/Base62 编码解码'),
+  p3('bcrypt-tool','🔒','encoding','Bcrypt Hash Tool','Bcrypt 哈希工具','Bcrypt hash generation and verification','Bcrypt 哈希生成与验证'),
+  p3('morse-code','📡','encoding','Morse Code','摩斯密码转换','Text ↔ Morse code conversion','文本与摩斯密码互转'),
+  p3('gzip-tool','📦','encoding','Gzip Compress','Gzip 压缩解压','Gzip compress and decompress','Gzip 压缩和解压缩'),
+  p3('htpasswd-gen','🔧','encoding','htpasswd Generator','htpasswd 生成器','Generate htpasswd entries','生成 htpasswd 条目'),
+  p3('file-hash','📁','encoding','File Hash Calculator','文件哈希计算器','Calculate file hashes via Web Crypto','文件哈希计算'),
+  p3('native-ascii','🔤','encoding','Native/ASCII Converter','Native/ASCII 互转','Native ↔ \\uXXXX ASCII conversion','Native 与 ASCII 互转'),
+  p3('rsa-tool','🔐','encoding','RSA Key Tool','RSA 密钥工具','RSA key pair generation and encrypt/decrypt','RSA 密钥对生成与加解密'),
+  p3('hex-url','🌐','encoding','URL Hex Encoding','URL 十六进制编码','URL hex encoding and decoding','URL 十六进制编码解码'),
+  p3('utf8-tool','📝','encoding','UTF-8 Byte Viewer','UTF-8 字节查看器','View UTF-8 byte sequences','查看 UTF-8 字节序列'),
+  p3('email-encode','📧','encoding','Email Encoder','邮箱地址加密','Anti-scraping email encoding','邮箱地址防采集编码'),
+  p3('cert-gen','📜','encoding','Certificate Generator','证书生成器','Self-signed certificate generator (coming soon)','自签名证书生成器（即将推出）'),
+  p3('js-obfuscate','🔒','encoding','JS Obfuscator','JS 混淆工具','Basic JS variable name obfuscation','基本 JS 变量名混淆'),
+  p3('scrypt-tool','🔑','encoding','Scrypt Hash','Scrypt 哈希','Scrypt hash tool (coming soon)','Scrypt 哈希工具（即将推出）'),
+  p3('cookie-formatter','🍪','formatter','Cookie Formatter','Cookie 格式化','Cookie string to key-value table','Cookie 字符串转键值表'),
+  p3('header-formatter','📋','formatter','HTTP Header Formatter','HTTP Header 格式化','HTTP header to key-value table','HTTP 头部转键值表'),
+  p3('url-params','🔗','formatter','URL Params Editor','URL 参数编辑器','URL query params to editable table','URL 查询参数编辑'),
+  p3('c-formatter','💻','formatter','C/C# Formatter','C/C# 格式化','Basic C/C# code formatting','基本 C/C# 代码格式化'),
+  p3('ruby-formatter','💎','formatter','Ruby Formatter','Ruby 格式化','Basic Ruby/Perl code formatting','基本 Ruby/Perl 代码格式化'),
+  p3('sql-quotes','📝','formatter','SQL Quotes Tool','SQL 引号处理','Add/remove double quotes in SQL','SQL 标识符引号处理'),
+  p3('hex-text','🔢','converter','Hex ↔ Text','十六进制与文本互转','Hex string ↔ text conversion','十六进制字符串与文本互转'),
+  p3('fullwidth-halfwidth','全','converter','Fullwidth ↔ Halfwidth','全角半角互转','Fullwidth ↔ halfwidth conversion','全角与半角字符互转'),
+  p3('geo-coords','🗺️','converter','Geo Coordinate Converter','地图坐标转换','WGS-84/GCJ-02/BD-09 conversion','WGS-84/GCJ-02/BD-09 坐标转换'),
+  p3('dms-converter','📐','converter','DMS Converter','度分秒转换','Decimal degrees ↔ DMS conversion','十进制度与度分秒互转'),
+  p3('short-url','🔗','converter','Short URL Encoder','短地址编码','Short URL Base62 encoding simulation','短地址 Base62 编码模拟'),
+  p3('html-ubb','📝','converter','HTML ↔ BBCode','HTML/UBB 互转','HTML ↔ BBCode/UBB conversion','HTML 与 BBCode 互转'),
+  p3('doc-to-pdf','📄','converter','Doc to PDF','文档转 PDF','HTML/Markdown to PDF (coming soon)','文档转 PDF（即将推出）'),
+  p3('si-units','📏','converter','SI Unit Converter','国际单位制转换','SI unit conversion (force, energy, etc.)','国际单位制转换'),
+  p3('ip-to-int','🌐','converter','IP ↔ Integer','IP 地址转整数','IPv4 ↔ integer conversion','IPv4 与整数互转'),
+  p3('matrix-json','📊','converter','Matrix ↔ JSON','矩阵与 JSON 互转','Matrix ↔ JSON 2D array conversion','矩阵与 JSON 二维数组互转'),
+  p3('cookie-to-js','🍪','converter','Cookie → JS','Cookie 转 JS','Cookie string to JS code','Cookie 字符串转 JS 代码'),
+  p3('richtext-markdown','📝','converter','Rich Text → Markdown','富文本转 Markdown','Rich text HTML to Markdown','富文本 HTML 转 Markdown'),
+  p3('video-to-mp3','🎵','converter','Video → MP3','视频转 MP3','Video to audio extraction (coming soon)','视频转音频（即将推出）'),
+  p3('video-trim','✂️','converter','Video Trim','视频裁剪','Video trimming (coming soon)','视频裁剪（即将推出）'),
+  p3('video-crop','🖼️','converter','Video Crop','视频画面裁剪','Video crop (coming soon)','视频画面裁剪（即将推出）'),
+  p3('pdf-compress','📦','converter','PDF Compress','PDF 压缩','PDF compression (coming soon)','PDF 压缩（即将推出）'),
+  p3('pdf-editor','✏️','converter','PDF Editor','PDF 编辑器','PDF editor (coming soon)','PDF 编辑器（即将推出）'),
+  p3('php-session','🐘','converter','PHP Session Parser','PHP Session 解析','PHP session data parser','PHP Session 数据解析'),
+  p3('currency-uppercase','💰','converter','Currency Uppercase','货币大写转换','Number to multi-currency uppercase','数字转多国货币大写'),
+  p3('js-eval','🔧','encoding','JS Eval Encrypt','JS Eval 加密','JS eval encrypt/decrypt','JS Eval 加密解密'),
+  p3('thunder-url','⚡','encoding','Thunder URL Decode','迅雷链接解码','Thunder/FlashGet URL decode','迅雷/快车链接解码'),
+  p3('torrent-magnet','🧲','encoding','Torrent → Magnet','种子转磁力链','Torrent to magnet link (coming soon)','种子转磁力链（即将推出）'),
+  p3('html-js-convert','🔄','converter','HTML ↔ JS String','HTML/JS 互转','HTML ↔ JS string conversion','HTML 与 JS 字符串互转'),
+  p3('lunar-calendar','📅','misc','Lunar Calendar','公历农历互转','Gregorian ↔ Lunar calendar conversion','公历与农历互转'),
+  p3('php-session-data','🐘','converter','PHP Session Data','PHP Session 数据转换','PHP session data conversion','PHP Session 数据转换'),
+  p3('text-reverse','🔄','text','Text Reverse','文本翻转','Text and line reverse','文本/行翻转'),
+  p3('text-find-replace','🔍','text','Find & Replace','查找替换','Find and replace with regex support','支持正则的查找替换'),
+  p3('line-numbers','🔢','text','Line Numbers','行号工具','Add/remove line numbers','添加/移除行号'),
+  p3('string-count','📊','text','String Counter','字符串计数','Count string occurrences','统计字符串出现次数'),
+  p3('ascii-art','🎨','text','ASCII Art','ASCII 艺术字','ASCII art text generator','ASCII 艺术字生成器'),
+  p3('number-sum','➕','text','Number Sum','数值求和','Sum numbers from multi-line input','多行数值求和'),
+  p3('text-shuffle','🔀','text','Text Shuffle','文本打乱','Randomly shuffle lines','随机打乱行顺序'),
+  p3('sequence-gen','🔢','text','Sequence Generator','序列号生成器','Sequence number generator','序列号生成器'),
+  p3('vertical-text','📝','text','Vertical Text','竖排文字','Vertical text layout','文字竖排生成'),
+  p3('text-spacer','⬜','text','Text Spacer','文字间隔','Insert characters between each character','在每个字符间插入字符'),
+  p3('random-chinese','🀄','text','Random Chinese','随机汉字','Random Chinese character generator','随机汉字生成器'),
+  p3('text-column','📊','text','Text Column Extract','文本按列截取','Column-based text extraction','按列截取文本'),
+  p3('text-length-filter','📏','text','Text Length Filter','文本长度过滤','Filter lines by length','按长度过滤文本行'),
+  p3('hanzi-stroke','✍️','text','Hanzi Stroke Order','汉字笔画顺序','Chinese character stroke order','汉字笔画顺序查询'),
+  p3('hanzi-stroke-count','📊','text','Hanzi Stroke Count','汉字笔画统计','Chinese character stroke count','汉字笔画数统计'),
+  p3('color-text','🌈','text','Color Text','彩色文字','Colorful/rainbow text HTML generator','彩色/彩虹文字生成'),
+];
+
 export const TOOL_REGISTRY: ToolMeta[] = [
   {
     slug: 'json-formatter',
@@ -854,6 +930,8 @@ export const TOOL_REGISTRY: ToolMeta[] = [
   { slug: 'keycode', icon: '⌨️', category: 'misc', enabled: true, supportedLocales: ['en', 'zh-cn', 'zh-tw', 'ja', 'ko', 'es', 'fr', 'de', 'pt', 'ru'], name: { 'en': 'Keycode Viewer', 'zh-cn': '键盘按键值查询', 'zh-tw': '鍵盤按鍵值查詢', 'ja': 'キーコードビューア', 'ko': '키코드 뷰어', 'es': 'Visor de Keycode', 'fr': 'Visualiseur de Keycode', 'de': 'Keycode-Viewer', 'pt': 'Visualizador de Keycode', 'ru': 'Просмотр кодов клавиш' }, description: { 'en': 'Real-time keypress event display showing key, keyCode, code and which', 'zh-cn': '实时显示按键事件的 key/keyCode/code/which', 'zh-tw': '即時顯示按鍵事件的 key/keyCode/code/which', 'ja': 'キー押下イベントをリアルタイム表示（key/keyCode/code/which）', 'ko': '키 누름 이벤트 실시간 표시 (key/keyCode/code/which)', 'es': 'Muestra eventos de tecla en tiempo real: key, keyCode, code y which', 'fr': 'Affichage en temps réel des événements de touche : key, keyCode, code et which', 'de': 'Echtzeit-Anzeige von Tastenereignissen: key, keyCode, code und which', 'pt': 'Exibição em tempo real de eventos de tecla: key, keyCode, code e which', 'ru': 'Отображение событий нажатия клавиш в реальном времени: key, keyCode, code, which' } },
   { slug: 'shield-badge', icon: '🛡️', category: 'misc', enabled: true, supportedLocales: ['en', 'zh-cn', 'zh-tw', 'ja', 'ko', 'es', 'fr', 'de', 'pt', 'ru'], name: { 'en': 'Shield Badge Generator', 'zh-cn': 'Shield 徽章生成器', 'zh-tw': 'Shield 徽章產生器', 'ja': 'シールドバッジ生成', 'ko': '쉴드 배지 생성기', 'es': 'Generador de Insignias Shield', 'fr': 'Générateur de Badges Shield', 'de': 'Shield-Badge-Generator', 'pt': 'Gerador de Badges Shield', 'ru': 'Генератор Shield-бейджей' }, description: { 'en': 'Generate GitHub-style shield badges with custom label, message and color', 'zh-cn': '生成 GitHub 风格的 Shield 徽章', 'zh-tw': '產生 GitHub 風格的 Shield 徽章', 'ja': 'GitHub風シールドバッジをカスタム生成', 'ko': 'GitHub 스타일 쉴드 배지 생성', 'es': 'Genera insignias shield estilo GitHub con etiqueta, mensaje y color personalizados', 'fr': 'Générez des badges shield style GitHub avec étiquette, message et couleur personnalisés', 'de': 'GitHub-Style Shield-Badges mit benutzerdefiniertem Label, Nachricht und Farbe generieren', 'pt': 'Gere badges shield estilo GitHub com rótulo, mensagem e cor personalizados', 'ru': 'Генерация Shield-бейджей в стиле GitHub с настраиваемыми метками, сообщениями и цветами' } },
   { slug: 'gif-maker', icon: '🎬', category: 'image', enabled: true, supportedLocales: ['en', 'zh-cn', 'zh-tw', 'ja', 'ko', 'es', 'fr', 'de', 'pt', 'ru'], name: { 'en': 'GIF Maker', 'zh-cn': 'GIF 生成器', 'zh-tw': 'GIF 產生器', 'ja': 'GIF作成', 'ko': 'GIF 생성기', 'es': 'Creador de GIF', 'fr': 'Créateur de GIF', 'de': 'GIF-Ersteller', 'pt': 'Criador de GIF', 'ru': 'Создатель GIF' }, description: { 'en': 'Create GIF from multiple images (coming soon - requires gif.js)', 'zh-cn': '多图合成 GIF（即将推出 - 需要 gif.js）', 'zh-tw': '多圖合成 GIF（即將推出 - 需要 gif.js）', 'ja': '複数画像からGIF作成（近日公開 - gif.js必要）', 'ko': '여러 이미지로 GIF 생성 (곧 출시 - gif.js 필요)', 'es': 'Crea GIF desde múltiples imágenes (próximamente - requiere gif.js)', 'fr': 'Créez des GIF à partir de plusieurs images (bientôt - nécessite gif.js)', 'de': 'GIF aus mehreren Bildern erstellen (demnächst - erfordert gif.js)', 'pt': 'Crie GIF a partir de múltiplas imagens (em breve - requer gif.js)', 'ru': 'Создание GIF из нескольких изображений (скоро - требуется gif.js)' } },
+  // P3 Tools
+  ...P3_TOOLS,
 ];
 
 // Query functions

@@ -367,7 +367,7 @@
   - 运行 CF Pages 限制检查脚本
 
 - [ ] 9. P3 批次：长尾工具实现（166 个工具）
-  - [ ] 9.1 JSON 工具组（6 个）
+  - [x] 9.1 JSON 工具组（6 个）
     - 实现 JSON 树形查看器（`tools/json-tree/`）、JSON 随机生成器（`tools/json-random/`）、JSON 清理工具（`tools/json-cleaner/`）、JSON 与 GET 字符串互转（`tools/json-querystring/`）、JSON 着色工具（`tools/json-highlight/`）、JSON 在线编辑器（`tools/json-editor/`）
     - 每个工具：创建 logic.ts + index.tsx，注册到 registry，添加翻译
     - _Requirements: 15.1-15.5, 23.1-23.5, 25.1-25.4, 21.1-21.4, 230.1-230.3, 231.1-231.4_
@@ -377,7 +377,7 @@
     - 验证扁平 JSON 对象 → 查询字符串 → JSON 产生等价结果
     - **Validates: Requirements 21.3**
 
-  - [ ] 9.3 编码加密工具组（15 个）
+  - [x] 9.3 编码加密工具组（15 个）
     - 实现 Escape 编码解码、Base32/Base58/Base62、Bcrypt 密码生成验证、摩斯密码转换、Gzip 压缩解压、htpasswd 生成器、文件哈希计算器、NATIVE/ASCII 互转、RSA 密钥对生成、网址十六进制加密、UTF-8 编码/解码、Email 地址加密、自签名证书生成、JS 加密混淆、Scrypt 密码生成验证
     - 每个工具：创建 `tools/{slug}/` 目录，实现 logic.ts + index.tsx，注册到 registry，添加翻译
     - _Requirements: 32, 33, 34, 35, 36, 37, 40, 41, 42, 162, 163, 164, 165, 166, 146_
@@ -397,12 +397,12 @@
     - 验证 RSA 公钥加密后私钥解密等于原始明文
     - **Validates: Requirements 42.5**
 
-  - [ ] 9.7 代码格式化工具组（6 个）
+  - [x] 9.7 代码格式化工具组（6 个）
     - 实现 Cookie 格式化、HTTP Header 格式化、URL 参数格式化、C/C# 代码格式化、Ruby/Perl/VBScript 格式化、SQL 双引号处理
     - 每个工具：创建 `tools/{slug}/` 目录，实现 logic.ts + index.tsx，注册到 registry，添加翻译
     - _Requirements: 48, 49, 50, 181, 182, 218_
 
-  - [ ] 9.8 转换工具组（25 个）
+  - [x] 9.8 转换工具组（25 个）
     - 实现十六进制与文本互转、全角半角互转、地图经纬度换算、经纬度转度分秒、短地址互转、HTML/UBB 互转、文档转 PDF、国际单位制转换、IP 地址转 Int、矩阵与 JSON 互转、Cookie 转 JS 代码、富文本转 Markdown、视频转 MP3、视频切片、视频画面裁剪、PDF 压缩、PDF 编辑器、PHP 序列化数据转换、数字转多国货币大写、JS Eval 加密解密、迅雷/快车 URL 加解密、种子转磁力链、HTML 转 JS 互转、公历农历互转、PHPSESSION 数据转换
     - 每个工具：创建 `tools/{slug}/` 目录，实现 logic.ts + index.tsx，注册到 registry，添加翻译
     - _Requirements: 53, 61, 167, 168, 169, 170, 171, 173, 175, 176, 177, 187, 189, 190, 191, 192, 193, 186b, 214, 147, 237, 238, 241, 245, 167b_
@@ -417,7 +417,7 @@
     - 验证 HEX → RGB → HEX 产生相同结果
     - **Validates: Requirements 55.6**
 
-  - [ ] 9.11 文字处理工具组（16 个）
+  - [x] 9.11 文字处理工具组（16 个）
     - 实现文本逆序/翻转、文本查找替换、序号添加/移除、字符串出现次数统计、ASCII 艺术字生成、数值列表求和、文本随机打乱、序列号生成器、文字竖排生成、文字间隔生成、随机汉字生成器、文本按列截取、文本长度过滤、汉字书写/笔画工具、汉字笔画统计、彩色文字特效生成
     - 每个工具：创建 `tools/{slug}/` 目录，实现 logic.ts + index.tsx，注册到 registry，添加翻译
     - _Requirements: 67, 71, 72, 73, 74, 76, 77, 78, 79, 80, 153, 154, 155, 201, 202, 204_
