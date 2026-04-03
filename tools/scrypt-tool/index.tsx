@@ -7,10 +7,10 @@ export default function ScryptTool({ locale, toolMeta }: { locale: string; toolM
   const t = useTranslations('tools.scrypt-tool');
   return (
     <ToolLayout toolMeta={toolMeta} locale={locale as any} instructions={t('instructions')}>
-      <div className="p-8 text-center text-gray-500">
-        <p className="text-4xl mb-4">🔑</p>
-        <p className="text-lg font-semibold">{t('coming_soon')}</p>
-        <p className="text-sm mt-2">{t('requires_library')}</p>
+      <div className="flex flex-col items-center justify-center py-12 text-center">
+        <span className="text-5xl mb-4">🚧</span>
+        <h2 className="text-xl font-semibold text-gray-700 mb-2">Coming Soon</h2>
+        <p className="text-gray-500 max-w-md">Scrypt password hashing with configurable N, r, p parameters and salt generation. Requires a dedicated scrypt implementation library.</p>
       </div>
     </ToolLayout>
   );

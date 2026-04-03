@@ -1,2 +1,28 @@
-// Crayon Colors logic
-export const TOOL_NAME = 'crayon-colors';
+export interface CrayonColor { name: string; hex: string; }
+
+export const CRAYON_COLORS: CrayonColor[] = [
+  { name: 'Red', hex: '#EE204D' }, { name: 'Red-Orange', hex: '#FF5349' },
+  { name: 'Orange', hex: '#FF7538' }, { name: 'Yellow-Orange', hex: '#FFB653' },
+  { name: 'Yellow', hex: '#FCE883' }, { name: 'Yellow-Green', hex: '#C5E384' },
+  { name: 'Green', hex: '#1CAC78' }, { name: 'Blue-Green', hex: '#199EBD' },
+  { name: 'Blue', hex: '#1F75FE' }, { name: 'Blue-Violet', hex: '#7366BD' },
+  { name: 'Violet (Purple)', hex: '#926EAE' }, { name: 'Red-Violet', hex: '#C0448F' },
+  { name: 'Carnation Pink', hex: '#FFAACC' }, { name: 'Scarlet', hex: '#FC2847' },
+  { name: 'Burnt Orange', hex: '#FF7034' }, { name: 'Macaroni and Cheese', hex: '#FFBD88' },
+  { name: 'Dandelion', hex: '#FDDB6D' }, { name: 'Granny Smith Apple', hex: '#A8E4A0' },
+  { name: 'Sea Green', hex: '#9FE2BF' }, { name: 'Sky Blue', hex: '#80DAEB' },
+  { name: 'Cerulean', hex: '#1DACD6' }, { name: 'Indigo', hex: '#5D76CB' },
+  { name: 'Wisteria', hex: '#CDA4DE' }, { name: 'Tickle Me Pink', hex: '#FC89AC' },
+  { name: 'Mahogany', hex: '#CD4A4A' }, { name: 'Burnt Sienna', hex: '#EA7E5D' },
+  { name: 'Tan', hex: '#FAA76C' }, { name: 'Peach', hex: '#FFCFAB' },
+  { name: 'Gold', hex: '#E7C697' }, { name: 'Asparagus', hex: '#87A96B' },
+  { name: 'Jungle Green', hex: '#3BB08F' }, { name: 'Teal Blue', hex: '#18A7B5' },
+  { name: 'Pacific Blue', hex: '#1CA9C9' }, { name: 'Midnight Blue', hex: '#1A4876' },
+  { name: 'Plum', hex: '#8E4585' }, { name: 'Magenta', hex: '#F664AF' },
+  { name: 'Brick Red', hex: '#CB4154' }, { name: 'Raw Sienna', hex: '#D68A59' },
+  { name: 'Sepia', hex: '#A5694F' }, { name: 'Apricot', hex: '#FDD9B5' },
+  { name: 'Spring Green', hex: '#ECEABE' }, { name: 'Forest Green', hex: '#6DAE81' },
+  { name: 'Robin Egg Blue', hex: '#1FCECB' }, { name: 'Cornflower', hex: '#9ACEEB' },
+  { name: 'Navy Blue', hex: '#1974D2' }, { name: 'Orchid', hex: '#E6A8D7' },
+  { name: 'White', hex: '#FFFFFF' }, { name: 'Black', hex: '#000000' },
+];

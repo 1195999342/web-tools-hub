@@ -7,10 +7,10 @@ export default function Md2Md4HashTool({ locale, toolMeta }: { locale: string; t
   const t = useTranslations('tools.md2-md4-hash');
   return (
     <ToolLayout toolMeta={toolMeta} locale={locale as any} instructions={t('instructions')}>
-      <div className="p-8 text-center text-gray-500">
-        <p className="text-4xl mb-4">🔑</p>
-        <p className="text-lg font-semibold">{t('coming_soon')}</p>
-        <p className="text-sm mt-2">{t('requires_library')}</p>
+      <div className="flex flex-col items-center justify-center py-12 text-center">
+        <span className="text-5xl mb-4">🚧</span>
+        <h2 className="text-xl font-semibold text-gray-700 mb-2">Coming Soon</h2>
+        <p className="text-gray-500 max-w-md">MD2 and MD4 hash algorithms require specialized cryptographic libraries not available in the browser. This tool will be available in a future update with WebAssembly support.</p>
       </div>
     </ToolLayout>
   );
