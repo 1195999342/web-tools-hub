@@ -1,6 +1,7 @@
 // XPath Tester logic
 
 export function evaluateXPath(xml: string, xpath: string): { results: string[]; error?: string } {
+  if (typeof DOMParser === 'undefined') return { results: [], error: 'Not available in this environment' };
   try {
     const parser = new DOMParser();
     const doc = parser.parseFromString(xml, 'text/xml');

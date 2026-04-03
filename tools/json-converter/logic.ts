@@ -207,6 +207,7 @@ function toXml(value: unknown, tag: string, indent: number): string {
 
 // XML → JSON
 export function xmlToJson(xml: string): ToolResult<string> {
+  if (typeof DOMParser === 'undefined') return { error: 'Not available in this environment' };
   try {
     const parser = new DOMParser();
     const doc = parser.parseFromString(xml, 'text/xml');

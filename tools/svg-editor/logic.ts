@@ -6,6 +6,7 @@ export const defaultSVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 
 </svg>`;
 
 export function validateSVG(code: string): boolean {
+  if (typeof DOMParser === 'undefined') return true;
   try {
     const parser = new DOMParser();
     const doc = parser.parseFromString(code, 'image/svg+xml');
