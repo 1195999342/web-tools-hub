@@ -1013,6 +1013,437 @@
       "instructions": "Generate colorful/rainbow text HTML.",
       "text_label": "Text",
       "input_placeholder": "Enter text..."
+    },
+    "useragent-gen": {
+      "instructions": "随机 UserAgent 生成与解析。",
+      "description": "随机 UserAgent 生成与解析"
+    },
+    "ip-tools": {
+      "instructions": "IPv4 随机生成与子网计算。",
+      "description": "IPv4 随机生成与子网计算"
+    },
+    "mac-gen": {
+      "instructions": "随机 MAC 地址生成器。",
+      "description": "随机 MAC 地址生成器"
+    },
+    "robots-gen": {
+      "instructions": "可视化 robots.txt 生成器。",
+      "description": "可视化 robots.txt 生成器"
+    },
+    "regex-codegen": {
+      "instructions": "正则表达式转多语言代码。",
+      "description": "正则表达式转多语言代码"
+    },
+    "useragent-list": {
+      "instructions": "常用 UserAgent 字符串参考。",
+      "description": "常用 UserAgent 字符串参考"
+    },
+    "robots-checker": {
+      "instructions": "Robots.txt 规则测试。",
+      "description": "Robots.txt 规则测试"
+    },
+    "css-animation": {
+      "instructions": "CSS 动画模板集合。",
+      "description": "CSS 动画模板集合"
+    },
+    "css-neon-glitch": {
+      "instructions": "霓虹灯/故障文字效果 CSS 生成器。",
+      "description": "霓虹灯/故障文字效果 CSS 生成器"
+    },
+    "web-safe-colors": {
+      "instructions": "216 Web 安全色色板。",
+      "description": "216 Web 安全色色板"
+    },
+    "color-picker-tool": {
+      "instructions": "高级调色板与配色管理。",
+      "description": "高级调色板与配色管理"
+    },
+    "image-color-picker": {
+      "instructions": "从上传图片中取色。",
+      "description": "从上传图片中取色"
+    },
+    "svg-editor": {
+      "instructions": "SVG 代码编辑器与实时预览。",
+      "description": "SVG 代码编辑器与实时预览"
+    },
+    "font-viewer": {
+      "instructions": "字体文件上传与预览。",
+      "description": "字体文件上传与预览"
+    },
+    "css-3d-card": {
+      "instructions": "3D 卡片翻转效果 CSS 生成器。",
+      "description": "3D 卡片翻转效果 CSS 生成器"
+    },
+    "css-liquid": {
+      "instructions": "液态/Blob 变形效果 CSS。",
+      "description": "液态/Blob 变形效果 CSS"
+    },
+    "css-sprites": {
+      "instructions": "CSS 精灵图工具。",
+      "coming_soon": "即将推出",
+      "requires_library": "此功能需要额外的库支持。"
+    },
+    "popup-gen": {
+      "instructions": "JavaScript window.open 弹窗生成器。",
+      "description": "JavaScript window.open 弹窗生成器"
+    },
+    "ui-gradient-css": {
+      "instructions": "双色渐变过渡生成器。",
+      "description": "双色渐变过渡生成器"
+    },
+    "grid-cutter": {
+      "instructions": "3x3/4x4 九宫格切图。",
+      "description": "3x3/4x4 九宫格切图"
+    },
+    "image-watermark": {
+      "instructions": "Canvas 文字水印。",
+      "description": "Canvas 文字水印"
+    },
+    "image-rotate": {
+      "instructions": "Canvas 图片旋转/翻转。",
+      "description": "Canvas 图片旋转/翻转"
+    },
+    "gif-frames": {
+      "instructions": "GIF 逐帧提取工具。",
+      "coming_soon": "即将推出",
+      "requires_library": "此功能需要额外的库支持。"
+    },
+    "placeholder-image": {
+      "instructions": "占位图片生成器。",
+      "description": "占位图片生成器"
+    },
+    "ico-gen": {
+      "instructions": "从图片生成 ICO 图标。",
+      "description": "从图片生成 ICO 图标"
+    },
+    "exif-viewer": {
+      "instructions": "EXIF 信息查看工具。",
+      "coming_soon": "即将推出",
+      "requires_library": "此功能需要额外的库支持。"
+    },
+    "drawing-board": {
+      "instructions": "Canvas 涂鸦绘画板。",
+      "description": "Canvas 涂鸦绘画板"
+    },
+    "grayscale-tool": {
+      "instructions": "图片灰度/黑白转换。",
+      "description": "图片灰度/黑白转换"
+    },
+    "image-round": {
+      "instructions": "图片圆角处理。",
+      "description": "图片圆角处理"
+    },
+    "signature-extract": {
+      "instructions": "签名提取工具。",
+      "coming_soon": "即将推出",
+      "requires_library": "此功能需要额外的库支持。"
+    },
+    "tiff-split": {
+      "instructions": "TIFF 分割工具。",
+      "coming_soon": "即将推出",
+      "requires_library": "此功能需要额外的库支持。"
+    },
+    "id-photo-bg": {
+      "instructions": "证件照换背景工具。",
+      "coming_soon": "即将推出",
+      "requires_library": "此功能需要额外的库支持。"
+    },
+    "ios-android-logo": {
+      "instructions": "iOS/Android 应用图标生成。",
+      "description": "iOS/Android 应用图标生成"
+    },
+    "radix-calc": {
+      "instructions": "二/八/十六进制运算。",
+      "description": "二/八/十六进制运算"
+    },
+    "gcd-lcm": {
+      "instructions": "最大公约数与最小公倍数计算。",
+      "description": "最大公约数与最小公倍数计算"
+    },
+    "prime-gen": {
+      "instructions": "质数生成器。",
+      "description": "质数生成器"
+    },
+    "fibonacci": {
+      "instructions": "斐波那契数列生成器。",
+      "description": "斐波那契数列生成器"
+    },
+    "statistics": {
+      "instructions": "方差/标准差/均值/中位数计算。",
+      "description": "方差/标准差/均值/中位数计算"
+    },
+    "pi-lookup": {
+      "instructions": "圆周率位数查询与搜索。",
+      "description": "圆周率位数查询与搜索"
+    },
+    "regression": {
+      "instructions": "最小二乘法线性回归。",
+      "description": "最小二乘法线性回归"
+    },
+    "vibration-calc": {
+      "instructions": "振动参数计算器。",
+      "description": "振动参数计算器"
+    },
+    "monte-carlo-pi": {
+      "instructions": "蒙特卡罗法估算圆周率可视化。",
+      "description": "蒙特卡罗法估算圆周率可视化"
+    },
+    "euler-e": {
+      "instructions": "自然常数 e 位数。",
+      "description": "自然常数 e 位数"
+    },
+    "bandwidth-calc": {
+      "instructions": "带宽/数据量/时间计算。",
+      "description": "带宽/数据量/时间计算"
+    },
+    "binary-calc": {
+      "instructions": "二进制算术运算。",
+      "description": "二进制算术运算"
+    },
+    "decimal-random": {
+      "instructions": "随机小数生成器。",
+      "description": "随机小数生成器"
+    },
+    "crayon-colors": {
+      "instructions": "48 色蜡笔/彩铅色彩。",
+      "description": "48 色蜡笔/彩铅色彩"
+    },
+    "inverse-color": {
+      "instructions": "互补色/反色计算器。",
+      "description": "互补色/反色计算器"
+    },
+    "xpath-tester": {
+      "instructions": "XPath 表达式测试。",
+      "description": "XPath 表达式测试"
+    },
+    "stopwatch": {
+      "instructions": "秒表与倒计时器。",
+      "description": "秒表与倒计时器"
+    },
+    "csv-to-html": {
+      "instructions": "CSV 转 HTML 表格。",
+      "description": "CSV 转 HTML 表格"
+    },
+    "string-concat": {
+      "instructions": "多行文本转语言字符串代码。",
+      "description": "多行文本转语言字符串代码"
+    },
+    "lottie-preview": {
+      "instructions": "Lottie 动画预览工具。",
+      "coming_soon": "即将推出",
+      "requires_library": "此功能需要额外的库支持。"
+    },
+    "fontawesome-search": {
+      "instructions": "FontAwesome 搜索工具。",
+      "coming_soon": "即将推出",
+      "requires_library": "此功能需要额外的库支持。"
+    },
+    "mindmap": {
+      "instructions": "思维导图工具。",
+      "coming_soon": "即将推出",
+      "requires_library": "此功能需要额外的库支持。"
+    },
+    "text-to-image": {
+      "instructions": "Canvas 文字转图片。",
+      "description": "Canvas 文字转图片"
+    },
+    "data-viz-3d": {
+      "instructions": "3D 数据可视化工具。",
+      "coming_soon": "即将推出",
+      "requires_library": "此功能需要额外的库支持。"
+    },
+    "db-designer": {
+      "instructions": "数据库设计工具。",
+      "coming_soon": "即将推出",
+      "requires_library": "此功能需要额外的库支持。"
+    },
+    "network-topology": {
+      "instructions": "网络拓扑图工具。",
+      "coming_soon": "即将推出",
+      "requires_library": "此功能需要额外的库支持。"
+    },
+    "grid-paper": {
+      "instructions": "格子纸/横线纸生成器。",
+      "description": "格子纸/横线纸生成器"
+    },
+    "maze-gen": {
+      "instructions": "随机迷宫生成器。",
+      "description": "随机迷宫生成器"
+    },
+    "meeting-timer": {
+      "instructions": "全屏会议倒计时。",
+      "description": "全屏会议倒计时"
+    },
+    "random-picker": {
+      "instructions": "随机点名抽签工具。",
+      "description": "随机点名抽签工具"
+    },
+    "reaction-test": {
+      "instructions": "反应速度测试。",
+      "description": "反应速度测试"
+    },
+    "color-blind-test": {
+      "instructions": "色盲色弱测试（石原图）。",
+      "description": "色盲色弱测试（石原图）"
+    },
+    "file-type-detect": {
+      "instructions": "文件魔数识别。",
+      "description": "文件魔数识别"
+    },
+    "ppi-calc": {
+      "instructions": "屏幕 PPI 计算器。",
+      "description": "屏幕 PPI 计算器"
+    },
+    "device-sizes": {
+      "instructions": "移动设备 UI 尺寸规范。",
+      "description": "移动设备 UI 尺寸规范"
+    },
+    "html5-test": {
+      "instructions": "HTML5 特性检测。",
+      "description": "HTML5 特性检测"
+    },
+    "id-photo-sizes": {
+      "instructions": "证件照尺寸标准参考。",
+      "description": "证件照尺寸标准参考"
+    },
+    "crx-parser": {
+      "instructions": "Chrome 扩展 CRX 地址解析。",
+      "description": "Chrome 扩展 CRX 地址解析"
+    },
+    "emoji-picker": {
+      "instructions": "Emoji 浏览搜索与复制。",
+      "description": "Emoji 浏览搜索与复制"
+    },
+    "special-symbols": {
+      "instructions": "特殊符号集合与复制。",
+      "description": "特殊符号集合与复制"
+    },
+    "pinyin-sort": {
+      "instructions": "按拼音首字母排序文本。",
+      "description": "按拼音首字母排序文本"
+    },
+    "zip-viewer": {
+      "instructions": "ZIP 文件查看工具。",
+      "coming_soon": "即将推出",
+      "requires_library": "此功能需要额外的库支持。"
+    },
+    "sql-to-java": {
+      "instructions": "SQL 建表语句转 Java 类。",
+      "description": "SQL 建表语句转 Java 类"
+    },
+    "mysql-to-java": {
+      "instructions": "MySQL DDL 转 Java 实体类。",
+      "description": "MySQL DDL 转 Java 实体类"
+    },
+    "sql-to-csharp": {
+      "instructions": "SQL 转 C# 实体类。",
+      "description": "SQL 转 C# 实体类"
+    },
+    "sql-field-view": {
+      "instructions": "SQL INSERT/UPDATE 字段表格视图。",
+      "description": "SQL INSERT/UPDATE 字段表格视图"
+    },
+    "html-css-js-filter": {
+      "instructions": "从 HTML 提取 JS/CSS/文本。",
+      "description": "从 HTML 提取 JS/CSS/文本"
+    },
+    "json-postman": {
+      "instructions": "JSON 与 Postman 集合互转。",
+      "description": "JSON 与 Postman 集合互转"
+    },
+    "sql-to-form": {
+      "instructions": "SQL 转 HTML 表单。",
+      "description": "SQL 转 HTML 表单"
+    },
+    "sql-to-json": {
+      "instructions": "SQL INSERT 转 JSON。",
+      "description": "SQL INSERT 转 JSON"
+    },
+    "url-postman": {
+      "instructions": "URL 转 Postman 请求。",
+      "description": "URL 转 Postman 请求"
+    },
+    "sql-to-yii": {
+      "instructions": "SQL 转 Yii2 ActiveRecord 模型。",
+      "description": "SQL 转 Yii2 ActiveRecord 模型"
+    },
+    "xml-editor": {
+      "instructions": "XML 在线编辑器与校验。",
+      "description": "XML 在线编辑器与校验"
+    },
+    "yaml-editor": {
+      "instructions": "YAML 在线编辑器与校验。",
+      "description": "YAML 在线编辑器与校验"
+    },
+    "toml-editor": {
+      "instructions": "TOML 在线编辑器与校验。",
+      "description": "TOML 在线编辑器与校验"
+    },
+    "runjs-editor": {
+      "instructions": "HTML/CSS/JS 在线编辑器与预览。",
+      "description": "HTML/CSS/JS 在线编辑器与预览"
+    },
+    "md2-md4-hash": {
+      "instructions": "MD2/MD4 哈希工具。",
+      "coming_soon": "即将推出",
+      "requires_library": "此功能需要额外的库支持。"
+    },
+    "shake-keccak": {
+      "instructions": "Shake/Keccak 哈希工具。",
+      "coming_soon": "即将推出",
+      "requires_library": "此功能需要额外的库支持。"
+    },
+    "db-password-gen": {
+      "instructions": "PostgreSQL/MySQL/MariaDB 密码哈希生成。",
+      "description": "PostgreSQL/MySQL/MariaDB 密码哈希生成"
+    },
+    "zodiac": {
+      "instructions": "十二生肖查询。",
+      "description": "十二生肖查询"
+    },
+    "id-card-check": {
+      "instructions": "身份证号码校验与信息提取。",
+      "description": "身份证号码校验与信息提取"
+    },
+    "blood-type": {
+      "instructions": "血型遗传计算器。",
+      "description": "血型遗传计算器"
+    },
+    "bmi-bmr": {
+      "instructions": "BMI 与 BMR 计算器。",
+      "description": "BMI 与 BMR 计算器"
+    },
+    "fuel-calc": {
+      "instructions": "汽车油耗计算器。",
+      "description": "汽车油耗计算器"
+    },
+    "ev-charge-calc": {
+      "instructions": "电动车充电费用计算。",
+      "description": "电动车充电费用计算"
+    },
+    "disk-partition": {
+      "instructions": "硬盘整数分区计算器。",
+      "description": "硬盘整数分区计算器"
+    },
+    "shichen": {
+      "instructions": "十二时辰时间转换。",
+      "description": "十二时辰时间转换"
+    },
+    "check-date": {
+      "instructions": "支票日期大写转换。",
+      "description": "支票日期大写转换"
+    },
+    "shortcut-ref": {
+      "instructions": "前端开发快捷键速查。",
+      "description": "前端开发快捷键速查"
+    },
+    "cdn-lookup": {
+      "instructions": "JS 库 CDN 地址查询。",
+      "description": "JS 库 CDN 地址查询"
+    },
+    "curl-all-langs": {
+      "instructions": "curl 转全语言代码生成。",
+      "description": "curl 转全语言代码生成"
     }
   },
   "categories": {

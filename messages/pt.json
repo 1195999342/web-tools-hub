@@ -1013,6 +1013,437 @@
       "instructions": "Generate colorful/rainbow text HTML.",
       "text_label": "Text",
       "input_placeholder": "Enter text..."
+    },
+    "useragent-gen": {
+      "instructions": "Random UserAgent generator and parser.",
+      "description": "Random UserAgent generator and parser"
+    },
+    "ip-tools": {
+      "instructions": "IPv4 random generator and subnet calculator.",
+      "description": "IPv4 random generator and subnet calculator"
+    },
+    "mac-gen": {
+      "instructions": "Random MAC address generator.",
+      "description": "Random MAC address generator"
+    },
+    "robots-gen": {
+      "instructions": "Visual robots.txt generator.",
+      "description": "Visual robots.txt generator"
+    },
+    "regex-codegen": {
+      "instructions": "Regex to multi-language code snippets.",
+      "description": "Regex to multi-language code snippets"
+    },
+    "useragent-list": {
+      "instructions": "Common UserAgent strings reference.",
+      "description": "Common UserAgent strings reference"
+    },
+    "robots-checker": {
+      "instructions": "Robots.txt rule tester.",
+      "description": "Robots.txt rule tester"
+    },
+    "css-animation": {
+      "instructions": "CSS animation template collection.",
+      "description": "CSS animation template collection"
+    },
+    "css-neon-glitch": {
+      "instructions": "Neon and glitch text effect CSS generator.",
+      "description": "Neon and glitch text effect CSS generator"
+    },
+    "web-safe-colors": {
+      "instructions": "216 web safe colors grid.",
+      "description": "216 web safe colors grid"
+    },
+    "color-picker-tool": {
+      "instructions": "Advanced color picker with palette management.",
+      "description": "Advanced color picker with palette management"
+    },
+    "image-color-picker": {
+      "instructions": "Pick colors from uploaded image.",
+      "description": "Pick colors from uploaded image"
+    },
+    "svg-editor": {
+      "instructions": "SVG code editor with live preview.",
+      "description": "SVG code editor with live preview"
+    },
+    "font-viewer": {
+      "instructions": "Font file upload and preview.",
+      "description": "Font file upload and preview"
+    },
+    "css-3d-card": {
+      "instructions": "3D card flip effect CSS generator.",
+      "description": "3D card flip effect CSS generator"
+    },
+    "css-liquid": {
+      "instructions": "Liquid/blob morphing effect CSS.",
+      "description": "Liquid/blob morphing effect CSS"
+    },
+    "css-sprites": {
+      "instructions": "CSS Sprites tool.",
+      "coming_soon": "Coming Soon",
+      "requires_library": "This feature requires an additional library."
+    },
+    "popup-gen": {
+      "instructions": "JavaScript window.open popup generator.",
+      "description": "JavaScript window.open popup generator"
+    },
+    "ui-gradient-css": {
+      "instructions": "Two-color gradient transition generator.",
+      "description": "Two-color gradient transition generator"
+    },
+    "grid-cutter": {
+      "instructions": "3x3/4x4 grid image cutter.",
+      "description": "3x3/4x4 grid image cutter"
+    },
+    "image-watermark": {
+      "instructions": "Text watermark on images via Canvas.",
+      "description": "Text watermark on images via Canvas"
+    },
+    "image-rotate": {
+      "instructions": "Image rotate and flip via Canvas.",
+      "description": "Image rotate and flip via Canvas"
+    },
+    "gif-frames": {
+      "instructions": "GIF Frame Extractor tool.",
+      "coming_soon": "Coming Soon",
+      "requires_library": "This feature requires an additional library."
+    },
+    "placeholder-image": {
+      "instructions": "Placeholder image generator.",
+      "description": "Placeholder image generator"
+    },
+    "ico-gen": {
+      "instructions": "ICO icon generator from image.",
+      "description": "ICO icon generator from image"
+    },
+    "exif-viewer": {
+      "instructions": "EXIF Viewer tool.",
+      "coming_soon": "Coming Soon",
+      "requires_library": "This feature requires an additional library."
+    },
+    "drawing-board": {
+      "instructions": "Canvas drawing and painting board.",
+      "description": "Canvas drawing and painting board"
+    },
+    "grayscale-tool": {
+      "instructions": "Image grayscale and B/W conversion.",
+      "description": "Image grayscale and B/W conversion"
+    },
+    "image-round": {
+      "instructions": "Image corner rounding.",
+      "description": "Image corner rounding"
+    },
+    "signature-extract": {
+      "instructions": "Signature Extract tool.",
+      "coming_soon": "Coming Soon",
+      "requires_library": "This feature requires an additional library."
+    },
+    "tiff-split": {
+      "instructions": "TIFF Split tool.",
+      "coming_soon": "Coming Soon",
+      "requires_library": "This feature requires an additional library."
+    },
+    "id-photo-bg": {
+      "instructions": "ID Photo Background tool.",
+      "coming_soon": "Coming Soon",
+      "requires_library": "This feature requires an additional library."
+    },
+    "ios-android-logo": {
+      "instructions": "iOS/Android app icon generator.",
+      "description": "iOS/Android app icon generator"
+    },
+    "radix-calc": {
+      "instructions": "Binary/octal/hex arithmetic operations.",
+      "description": "Binary/octal/hex arithmetic operations"
+    },
+    "gcd-lcm": {
+      "instructions": "GCD and LCM calculator.",
+      "description": "GCD and LCM calculator"
+    },
+    "prime-gen": {
+      "instructions": "Prime number generator.",
+      "description": "Prime number generator"
+    },
+    "fibonacci": {
+      "instructions": "Fibonacci sequence generator.",
+      "description": "Fibonacci sequence generator"
+    },
+    "statistics": {
+      "instructions": "Variance/std dev/mean/median calculator.",
+      "description": "Variance/std dev/mean/median calculator"
+    },
+    "pi-lookup": {
+      "instructions": "Pi digit lookup and search.",
+      "description": "Pi digit lookup and search"
+    },
+    "regression": {
+      "instructions": "Least squares linear regression.",
+      "description": "Least squares linear regression"
+    },
+    "vibration-calc": {
+      "instructions": "Vibration parameter calculator.",
+      "description": "Vibration parameter calculator"
+    },
+    "monte-carlo-pi": {
+      "instructions": "Monte Carlo pi estimation visualization.",
+      "description": "Monte Carlo pi estimation visualization"
+    },
+    "euler-e": {
+      "instructions": "Euler number e digits.",
+      "description": "Euler number e digits"
+    },
+    "bandwidth-calc": {
+      "instructions": "Bandwidth/data/time calculator.",
+      "description": "Bandwidth/data/time calculator"
+    },
+    "binary-calc": {
+      "instructions": "Binary arithmetic calculator.",
+      "description": "Binary arithmetic calculator"
+    },
+    "decimal-random": {
+      "instructions": "Random decimal number generator.",
+      "description": "Random decimal number generator"
+    },
+    "crayon-colors": {
+      "instructions": "48 crayon and colored pencil colors.",
+      "description": "48 crayon and colored pencil colors"
+    },
+    "inverse-color": {
+      "instructions": "Complementary/inverse color calculator.",
+      "description": "Complementary/inverse color calculator"
+    },
+    "xpath-tester": {
+      "instructions": "XPath expression tester.",
+      "description": "XPath expression tester"
+    },
+    "stopwatch": {
+      "instructions": "Stopwatch and countdown timer.",
+      "description": "Stopwatch and countdown timer"
+    },
+    "csv-to-html": {
+      "instructions": "CSV to HTML table.",
+      "description": "CSV to HTML table"
+    },
+    "string-concat": {
+      "instructions": "Multi-line text to language string code.",
+      "description": "Multi-line text to language string code"
+    },
+    "lottie-preview": {
+      "instructions": "Lottie Preview tool.",
+      "coming_soon": "Coming Soon",
+      "requires_library": "This feature requires an additional library."
+    },
+    "fontawesome-search": {
+      "instructions": "FontAwesome Search tool.",
+      "coming_soon": "Coming Soon",
+      "requires_library": "This feature requires an additional library."
+    },
+    "mindmap": {
+      "instructions": "Mind Map tool.",
+      "coming_soon": "Coming Soon",
+      "requires_library": "This feature requires an additional library."
+    },
+    "text-to-image": {
+      "instructions": "Text to image via Canvas.",
+      "description": "Text to image via Canvas"
+    },
+    "data-viz-3d": {
+      "instructions": "3D Data Viz tool.",
+      "coming_soon": "Coming Soon",
+      "requires_library": "This feature requires an additional library."
+    },
+    "db-designer": {
+      "instructions": "DB Designer tool.",
+      "coming_soon": "Coming Soon",
+      "requires_library": "This feature requires an additional library."
+    },
+    "network-topology": {
+      "instructions": "Network Topology tool.",
+      "coming_soon": "Coming Soon",
+      "requires_library": "This feature requires an additional library."
+    },
+    "grid-paper": {
+      "instructions": "Grid and lined paper generator.",
+      "description": "Grid and lined paper generator"
+    },
+    "maze-gen": {
+      "instructions": "Random maze generator.",
+      "description": "Random maze generator"
+    },
+    "meeting-timer": {
+      "instructions": "Full-screen meeting countdown.",
+      "description": "Full-screen meeting countdown"
+    },
+    "random-picker": {
+      "instructions": "Random name picker with animation.",
+      "description": "Random name picker with animation"
+    },
+    "reaction-test": {
+      "instructions": "Reaction speed test.",
+      "description": "Reaction speed test"
+    },
+    "color-blind-test": {
+      "instructions": "Color blindness test (Ishihara).",
+      "description": "Color blindness test (Ishihara)"
+    },
+    "file-type-detect": {
+      "instructions": "File magic bytes detector.",
+      "description": "File magic bytes detector"
+    },
+    "ppi-calc": {
+      "instructions": "Screen PPI calculator.",
+      "description": "Screen PPI calculator"
+    },
+    "device-sizes": {
+      "instructions": "Mobile device UI size reference.",
+      "description": "Mobile device UI size reference"
+    },
+    "html5-test": {
+      "instructions": "HTML5 feature detection.",
+      "description": "HTML5 feature detection"
+    },
+    "id-photo-sizes": {
+      "instructions": "ID photo size standards reference.",
+      "description": "ID photo size standards reference"
+    },
+    "crx-parser": {
+      "instructions": "Chrome extension CRX URL parser.",
+      "description": "Chrome extension CRX URL parser"
+    },
+    "emoji-picker": {
+      "instructions": "Emoji browser search and copy.",
+      "description": "Emoji browser search and copy"
+    },
+    "special-symbols": {
+      "instructions": "Special symbols collection and copy.",
+      "description": "Special symbols collection and copy"
+    },
+    "pinyin-sort": {
+      "instructions": "Sort text by Chinese pinyin initial.",
+      "description": "Sort text by Chinese pinyin initial"
+    },
+    "zip-viewer": {
+      "instructions": "ZIP Viewer tool.",
+      "coming_soon": "Coming Soon",
+      "requires_library": "This feature requires an additional library."
+    },
+    "sql-to-java": {
+      "instructions": "SQL CREATE TABLE to Java class.",
+      "description": "SQL CREATE TABLE to Java class"
+    },
+    "mysql-to-java": {
+      "instructions": "MySQL DDL to Java entity.",
+      "description": "MySQL DDL to Java entity"
+    },
+    "sql-to-csharp": {
+      "instructions": "SQL to C# class.",
+      "description": "SQL to C# class"
+    },
+    "sql-field-view": {
+      "instructions": "SQL INSERT/UPDATE field table view.",
+      "description": "SQL INSERT/UPDATE field table view"
+    },
+    "html-css-js-filter": {
+      "instructions": "Extract JS/CSS/text from HTML.",
+      "description": "Extract JS/CSS/text from HTML"
+    },
+    "json-postman": {
+      "instructions": "JSON to Postman collection converter.",
+      "description": "JSON to Postman collection converter"
+    },
+    "sql-to-form": {
+      "instructions": "SQL to HTML form.",
+      "description": "SQL to HTML form"
+    },
+    "sql-to-json": {
+      "instructions": "SQL INSERT to JSON.",
+      "description": "SQL INSERT to JSON"
+    },
+    "url-postman": {
+      "instructions": "URL to Postman request.",
+      "description": "URL to Postman request"
+    },
+    "sql-to-yii": {
+      "instructions": "SQL to Yii2 ActiveRecord model.",
+      "description": "SQL to Yii2 ActiveRecord model"
+    },
+    "xml-editor": {
+      "instructions": "XML online editor with validation.",
+      "description": "XML online editor with validation"
+    },
+    "yaml-editor": {
+      "instructions": "YAML online editor with validation.",
+      "description": "YAML online editor with validation"
+    },
+    "toml-editor": {
+      "instructions": "TOML online editor with validation.",
+      "description": "TOML online editor with validation"
+    },
+    "runjs-editor": {
+      "instructions": "HTML/CSS/JS live editor with preview.",
+      "description": "HTML/CSS/JS live editor with preview"
+    },
+    "md2-md4-hash": {
+      "instructions": "MD2/MD4 Hash tool.",
+      "coming_soon": "Coming Soon",
+      "requires_library": "This feature requires an additional library."
+    },
+    "shake-keccak": {
+      "instructions": "Shake/Keccak Hash tool.",
+      "coming_soon": "Coming Soon",
+      "requires_library": "This feature requires an additional library."
+    },
+    "db-password-gen": {
+      "instructions": "PostgreSQL/MySQL/MariaDB password hash.",
+      "description": "PostgreSQL/MySQL/MariaDB password hash"
+    },
+    "zodiac": {
+      "instructions": "Chinese zodiac lookup.",
+      "description": "Chinese zodiac lookup"
+    },
+    "id-card-check": {
+      "instructions": "ID card number validator and info extractor.",
+      "description": "ID card number validator and info extractor"
+    },
+    "blood-type": {
+      "instructions": "Blood type inheritance calculator.",
+      "description": "Blood type inheritance calculator"
+    },
+    "bmi-bmr": {
+      "instructions": "BMI and BMR calculator.",
+      "description": "BMI and BMR calculator"
+    },
+    "fuel-calc": {
+      "instructions": "Car fuel consumption calculator.",
+      "description": "Car fuel consumption calculator"
+    },
+    "ev-charge-calc": {
+      "instructions": "EV charging cost calculator.",
+      "description": "EV charging cost calculator"
+    },
+    "disk-partition": {
+      "instructions": "Hard disk integer partition calculator.",
+      "description": "Hard disk integer partition calculator"
+    },
+    "shichen": {
+      "instructions": "Chinese 12 Shichen time converter.",
+      "description": "Chinese 12 Shichen time converter"
+    },
+    "check-date": {
+      "instructions": "Check date uppercase converter.",
+      "description": "Check date uppercase converter"
+    },
+    "shortcut-ref": {
+      "instructions": "Frontend dev shortcut key reference.",
+      "description": "Frontend dev shortcut key reference"
+    },
+    "cdn-lookup": {
+      "instructions": "JS library CDN URL lookup.",
+      "description": "JS library CDN URL lookup"
+    },
+    "curl-all-langs": {
+      "instructions": "curl to all languages code generator.",
+      "description": "curl to all languages code generator"
     }
   },
   "categories": {
